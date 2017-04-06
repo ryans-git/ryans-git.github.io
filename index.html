@@ -58,7 +58,7 @@
 								<h2 class="major">Projects</h2> 
 								<h3>Electric Skateboard: <a href="#bronco">"The Bronco"</a></h3>
 								<span class="image main"><img src="images/eskateBoard.jpeg" alt="" /></span>
-								<p>I have always been fascinated with electric vehicles so I decided to build an electric skateboard to improve my commute to school. I started researching for the project in the summer of 2015 and the build begin in early 2016.  Although the board is fully operational, I am still adding improvements. The current enhancements include adding a BMS for easier charging/cell balancing and incorporating an iOS app to monitor the speed and various settings for the board. The link above outlines the project from its inception to the current improvements being implemented.e</p>
+								<p>I have always been fascinated with electric vehicles so I decided to build an electric skateboard to improve my commute to school. I started researching for the project in the summer of 2015 and the build begin in early 2016.  Although the board is fully operational, I am still adding improvements. The current enhancements include adding a BMS for easier charging/cell balancing and incorporating an iOS app to monitor the speed and various settings for the board. The link below outlines the project from its inception to the current improvements being implemented.</p>
 								<ul class="actions">
 									<li><a href="#bronco" class="button">More Info</a></li>
 								</ul>
@@ -214,8 +214,37 @@
 							<!-- Collaborative Filtering -->
 								<article id="collab_filtering">
 									<h2 class="major">Collaborative Filtering</h2>
-									<h3>Web Scrapping and Collaborative Filtering to Predict Movie Ratings</h3>
-									<span class="image main"><img src="images/movies.png" alt="" /></span>
+									<h3>Predicting Movie Ratings with data from a web scrapper and using a collaborative filtering algorithm</h3>
+									<span class="image main"><img src="images/Collaborative_filtering.gif" alt="" /><i>By Moshanin - <a href="https://en.wikipedia.org/wiki/Collaborative_filtering#/media/File:Collaborative_filtering.gif">https://commons.wikimedia.org/w/index.php?curid=24097346</a></i></span>
+									
+								<!-- Table of Contents -->
+									<h2>Contents</h2>
+									<ol>
+										<li><a href="#introductionCF">Introduction</a><br>&nbsp;a.&nbsp;&nbsp;&nbsp;Background</li>
+										<li>
+											Approach<br>
+											&nbsp;a.&nbsp;&nbsp;&nbsp;Tools<br>
+											&nbsp;b.&nbsp;&nbsp;&nbsp;Dataset<br>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i.&nbsp;&nbsp;&nbsp;Web Scrapping<br>
+											&nbsp;c.&nbsp;&nbsp;&nbsp;Collaborative Filtering Algorithm<br>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i.&nbsp;&nbsp;&nbsp; Baseline Predictor<br>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ii.&nbsp;&nbsp;&nbsp;Similarity<br>
+										</li>
+										<li>
+											Results<br>
+											&nbsp;a.&nbsp;&nbsp;&nbsp;RMSE<br>
+											&nbsp;b.&nbsp;&nbsp;&nbsp;Algorithm Analysis<br>
+										</li>
+										<li>Recommendations</li>
+										<li>References</li>
+										</ol>
+								<!-- CF Introduction -->
+								<a name="introductionCF"></a>
+									<h2>Introduction</h2>
+									<p>
+										This post provides an overview for how collaborative filtering can offer a solution to predicting user ratings of a movie based on other user ratings. Common collaborative filtering implementation methods that are used in commercial websites and programs include a baseline predictor, user and movie biases, Cosine similarity, nearest neighbor predictor, and root mean squared error (RMSE) for evaluating the results. The project worked on a small sample set which was able to easily demonstrate the core underlying algorithm. This prediction engine does have limitations as errors generated would be expected to rise as the user base expanded and they became more diverse. Recommendations discussed at the end of the post include incorporating a test set to more accurately quantify the results, using a more powerful language handle larger datasets, and implementing more complex inner algorithms for improved predictions.
+										</p>
+
 								</article>
 
 							<!-- SpartaMart -->
