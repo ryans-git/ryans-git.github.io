@@ -55,11 +55,13 @@
 
 						<!-- Projects -->
 							<article id="projects">
-								<h2 class="major">Projects</h2>
+								<h2 class="major">Projects</h2> 
 								<h3>Electric Skateboard: <a href="#bronco">"The Bronco"</a></h3>
 								<span class="image main"><img src="images/eskateBoard.jpeg" alt="" /></span>
-								<p>I have always been fascinated with electric vehicles so I decided to build an electric skateboard to improve my commute to school. I started researching for the project in the summer of 2015 and the build begin in early 2016.  Although the board is fully operational, I am still adding improvements. The current enhancements include adding a BMS for easier charging/cell balancing and incorporating an iOS app to monitor the speed and various settings for the board. The link above outlines the project from its inception to the current improvements being implemented.
-								<br><a href="#bronco">For build specifications and updates click here.</a></p>
+								<p>I have always been fascinated with electric vehicles so I decided to build an electric skateboard to improve my commute to school. I started researching for the project in the summer of 2015 and the build begin in early 2016.  Although the board is fully operational, I am still adding improvements. The current enhancements include adding a BMS for easier charging/cell balancing and incorporating an iOS app to monitor the speed and various settings for the board. The link above outlines the project from its inception to the current improvements being implemented.e</p>
+								<ul class="actions">
+									<li><a href="#bronco" class="button">More Info</a></li>
+								</ul>
 
 								<h3>iOS Application: <a href="#spartamart">"SpartaMart"</a></h3>
 								<span class="image main"><img src="images/SpartaMart852.jpg" alt="" /></span></p>
@@ -75,64 +77,125 @@
 							<!-- Bronco -->
 								<article id="bronco">
 									<h2 class="major">The Bronco</h2>
-									<span class="image main"><img src="images/eskateBoard.jpeg" alt="" /></span>
-									<p>Research for this build started in early 2015 and numerous upgrades are still in progress that will be updated to this page. This write up follows the project in chronological order so for the current working board specs and in progress developments, navigate to the bottom of this <a href="#bronco">page</a>. 
-									<!--FIX LINK-->
+									<span class="image main"><img src="images/eboard.jpeg" alt="" /></span>
+								<!-- Table of Contents -->
+									<h2>Contents</h2>
+									<ol>
+										<li><a href="#introduction">Introduction</a></li>
+										<li>
+											Power System<br>
+											&nbsp;a.&nbsp;&nbsp;&nbsp;Initial Battery Designs<br>
+											&nbsp;b.&nbsp;&nbsp;&nbsp;Current Implementation<br>
+											&nbsp;c.&nbsp;&nbsp;&nbsp;Future Improvements<br>
+										</li>
+										<li>
+											Drive System<br>
+											&nbsp;a.&nbsp;&nbsp;&nbsp;Initial Drivetrain Setup<br>
+											&nbsp;b.&nbsp;&nbsp;&nbsp;Current Implementation<br>
+											&nbsp;c.&nbsp;&nbsp;&nbsp;Future Improvements<br>
+										</li>
+										<li>
+											Board & Accessories<br>
+											&nbsp;a.&nbsp;&nbsp;&nbsp;Basic Components<br>
+											&nbsp;b.&nbsp;&nbsp;&nbsp;Lights<br>
+											&nbsp;c.&nbsp;&nbsp;&nbsp;iOS/watchOS Application<br>
+										</li>
+										<li><a href="#parts_list">Parts List</a><br></li>
+										<li><a href="#additional_resources">Additional Resources</a><br>
+											&nbsp;a.&nbsp;&nbsp;&nbsp;Vendors<br>
+											&nbsp;b.&nbsp;&nbsp;&nbsp;Forums<br>
+											&nbsp;c.&nbsp;&nbsp;&nbsp;Calculators<br>
+											<!--
+											&nbsp;d.&nbsp;&nbsp;&nbsp;<a href="#references">References</a><br></li>
+											-->
+									</ol>
+								<!-- Introduction -->
+								<a name="introduction"></a>
+									<h2>Introduction</h2>
+									<p>
+										I have always had a passion for electric vehicles and with the rise of electric skateboards in particular over the past few years, I figured it would be a great project for an engineering student. For my first build, I planned to use parts that had proven to be effective in the DIY community. Eventually, I hope to use my knowledge from this build along with my schooling to design my own custom motor controller, BMS, remote transmitter, and an iOS application to track and log information.</p>
+									<p>
+										The board earned the name, <i>”The Bronco"</i> from an early prototype where eager friends testing it out would unexpectedly be <i>bucked</i> off when the connection from the transmitter to the motor controller would suddenly drop. This can unfortunately be quite a traumatizing experience when traveling at >20mph. These issues have since been fixed and the board is mostly safe for riding today, but it is still important to remember this is not a professional product and can still be incredibly dangerous when reaching high speeds. Overall, the project has proved to be a fun, yet challenging and even frustrating experience at times.</p>
+									<span class="image main"><img src="images/ebaordScuff.jpeg" alt="" /></span>
+									<p>
+										Some nice scuff makes from when the board went rogue and ran into tires and curbs.</p>
+									<p>
+										This website is new and incomplete. A complete write up is coming soon. Images from the first fully fuctional design are shown below.</p>
+									<span class="image main"><img src="images/firstTest.jpg" alt="" /></span>
+									<p>
+										Initial testing</p>
+									<span class="image main"><img src="images/electronics.jpeg" alt="" /></span>
+									<p>
+										Originally used two 5s 5aH LiPos to power the board. I have since switched to using five 2s 5aH (so the same 10 cell-37V total) for a smaller profile.</p>
+									<span class="image main"><img src="images/enclosure.jpeg" alt="" /></span>
+									<p>
+										The original enclosure (Flagship V2 by psycotiller). With the new lower profile batteries, a slimmer custome enclosure can be used.</p>
+									<span class="image main"><img src="images/voltmeters.jpeg" alt="" /></span>
+									<p>
+										I used a voltmeter to monitor each of the two 5 cell batteriers originally, since they kept discharging at different rates.</p>
+									<span class="image main"><img src="images/drivetrain.jpeg" alt="" /></span>
+									<p>
+										The original drivetrain used a 9mm wide belt at a 16T/36T gearing ratio. I recently switched to a 15mm wide belt which has improved both the acceleration and brake tremendously. The tradeoff is that it seems to be loosing efficency. Not a major issue though, since I don't plan on reaching the 30mph speed the board can technically reach at full efficency.</p>
+									<span class="image main"><img src="images/boardTopView.jpeg" alt="" /></span>
 
-									</p>
+								<!-- Parts List -->
+								<a name="parts_list"></a>
+									<h2>Parts List</h2>
+								<h4>Power System:</h4></a></li></ol>
+									<ul><li>Battery: 10S1P 5aH (<a href="https://hobbyking.com/en_us/turnigy-5000mah-2s-7-4v-60c-hardcase-pack.html">Turnigy 5Ah 2S 60C Hardcase Packs x5</a>)</li>
+									<li>Battery Management System: <a href="http://www.batterysupports.com/36v-37v-42v-10s-60a-10x-36v-lithium-ion-lipolymer-battery-bms-p-267.html">42V-10S-60A LiPo BMS</a></li>
+									<li>Charger: <a href="https://www.amazon.com/gp/product/B01HXMY0TE/ref=od_aui_detailpages00?ie=UTF8&psc=1">42V-2A Fast Charger</a>
+									<li>Charger Replacement Plug: <a href="https://cart.electricscooterparts.com/ProductDetails.asp?ProductCode=CNX-505	">3 Pin Inline</a></li>
+									<li>Charge Port: <a href="https://cart.electricscooterparts.com/ProductDetails.asp?ProductCode=CNX-515">3-Pin Inline Port</a></li>
+									<li>Switch: <a href="https://www.amazon.com/gp/product/B017KP67FY/ref=oh_aui_detailpage_o03_s00?ie=UTF8&psc=1">Latching LED Pushbutton SPDT</a></li>
+									<li>Voltmeter: <a href="https://www.amazon.com/5-120V-Voltmeter-3-Digital-Display-Voltage/dp/B016FHSY3Q">5-120V DC LED meter</a></li>
+									</ul>
+								<h4>Drive System:</h4><ul>
+									<li>Motor Controller: <a href="http://www.ollinboardcompany.com/product/vedder-s-speed-controller">VESC </a></li>
+									<li>Motor: <a href="https://hobbyking.com/en_us/turnigy-aerodrive-sk3-6374-192kv-brushless-outrunner-motor.html">Turnigy SK3-6374-192kv Brushless DC</a></li>
+									<li>Belt: <a href="https://www.vbeltguys.com/">15mm HTD5-55T (275mm)</a></li>
+									<li>Gearing: <a href="http://diyelectricskateboard.com/diy-electric-skateboard-kits-parts/16t-htd5-motor-pulley/">36T/16T 2.25 Ratio</a></li>
+									<li>Motor Mount: <a href="http://diyelectricskateboard.com/diy-electric-skateboard-kits-parts/v4-63mm-motor-mount/">TorqueBoards v2 </a></li>
+									<li>Transmitter: <a href="https://electric-skateboard.market/product/2-4ghz-mini-remote-receiver/">2.4gHz Mini Remote</a></li></ul>
+								<h4>Board & Accessories</h4><ul>
+									<li>Deck: <a href="http://longhairedboy.com/shop/decks/lhb-scarlet-electric-skateboard-deck/">40” LHB Scarlet Electric Skateboard Deck </a></li>
+									<li>Wheels: <a href="https://www.amazon.com/ABEC11-FLYWHEELS-83mm-75a-Set/dp/B000REYYCO/ref=cm_cr_arp_d_product_top?ie=UTF8">83mm ABEC 11 75a Flywheels</a></li>
+									<li>Enclosure: <a href="http://psychotiller.com/products/shop">Custom Psycotiller 18” ABS Plastic</a></li>
+									<li>Enclosure Mount: <a href="https://www.amazon.com/Insert-Interface-Screws-Hexagonal-Socket/dp/B0143ABKX8/ref=sr_1_1?ie=UTF8&qid=1491343784&sr=8-1&keywords=M6+E-Nut+Wood+Insert+Interface+Screws">M6 Wood Insert Screws</a></li>
+									<li>Trucks: <a href="https://www.amazon.com/Caliber-Trucks-Cal-Longboard-Black/dp/B00NY3Q5Q8/ref=sr_1_1?ie=UTF8&qid=1491340574&sr=8-1&keywords=Caliber+Cal+II+black">Caliber II 50-degree</a></li>
+									<li>Lights: <a href="https://www.amazon.com/dp/B00R49C9GI/ref=twister_B00R47363K?_encoding=UTF8&th=1">3V-LED array</a></li>
+									<li>Risers: <a href="https://www.muirskate.com/longboard/risers/1903/0-5-khiro-flat-hard-risers">0.5” Khiro Flat </a></li>
+									<li>Hardware: <a href="https://www.amazon.com/INDEPENDENT-Genuine-Parts-Phillips-Hardware/dp/B00IO8D7NC/ref=sr_1_1?ie=UTF8&qid=1491343228&sr=8-1&keywords=skateboard+hardware+1.5">1.5” bolts</a></li>
+									<li>Bearings: <a href="https://www.amazon.com/Bones-Reds-Precision-Skate-Bearings/dp/B01N1S0HUD/ref=sr_1_1?ie=UTF8&qid=1491343417&sr=8-1&keywords=bones%2Breds&th=1&psc=1">Bones Reds (with spacers)</a></li>
+									<li>Miscellaneous Parts: 10AWG wire/5mm bullet connectors/Heat shrink tubing</br></p></li></ul>
 
-									<h3>Parts List</h3>
-									<h4>Power System:</h4>
-									<p>Battery: 10S1P 5aH (<a href="https://hobbyking.com/en_us/turnigy-5000mah-2s-7-4v-60c-hardcase-pack.html">Turnigy 5Ah 2S 60C Hardcase Packs x5</a>)
-									<br>Battery Management System: <a href="http://www.batterysupports.com/36v-37v-42v-10s-60a-10x-36v-lithium-ion-lipolymer-battery-bms-p-267.html">42V-10S-60A LiPo BMS</a>
-									<br>Charger: <a href="https://www.amazon.com/gp/product/B01HXMY0TE/ref=od_aui_detailpages00?ie=UTF8&psc=1">42V-2A Fast Charger</a>
-									<br>Charger Replacement Plug: <a href="https://cart.electricscooterparts.com/ProductDetails.asp?ProductCode=CNX-505	">3 Pin Inline</a>
-									<br>Charge Port: <a href="https://cart.electricscooterparts.com/ProductDetails.asp?ProductCode=CNX-515">3-Pin Inline Port</a>
-									<br>Switch: <a href="https://www.amazon.com/gp/product/B017KP67FY/ref=oh_aui_detailpage_o03_s00?ie=UTF8&psc=1">Latching LED Pushbutton SPDT</a>
-									<br>Voltmeter: <a href="https://www.amazon.com/5-120V-Voltmeter-3-Digital-Display-Voltage/dp/B016FHSY3Q">5-120V DC LED meter</a></br></p>
-									<h4>Drive System:</h4>
-									<p>Motor Controller: <a href="https://hobbyking.com/en_us/turnigy-5000mah-2s-7-4v-60c-hardcase-pack.html">VESC </a>
-									<br>Motor: <a href="https://hobbyking.com/en_us/turnigy-aerodrive-sk3-6374-192kv-brushless-outrunner-motor.html">Turnigy SK3-6374-192kv Brushless DC</a>
-									<br>Belt: <a href="https://www.vbeltguys.com/">15mm HTD5-55T (275mm)</a>
-									<br>Gearing: <a href="http://diyelectricskateboard.com/diy-electric-skateboard-kits-parts/16t-htd5-motor-pulley/">36T/16T 2.25 Ratio</a>
-									<br>Motor Mount: <a href="http://diyelectricskateboard.com/diy-electric-skateboard-kits-parts/v4-63mm-motor-mount/">TorqueBoards v2 </a>
-									<br>Transmitter: <a href="https://electric-skateboard.market/product/2-4ghz-mini-remote-receiver/">2.4gHz Mini Remote</a></br></p>
-									<h4>Board & Accessories</h4>
-									<p>Deck: <a href="http://longhairedboy.com/shop/decks/lhb-scarlet-electric-skateboard-deck/">40” LHB Scarlet Electric Skateboard Deck </a>
-									<br>Wheels: <a href="https://www.amazon.com/ABEC11-FLYWHEELS-83mm-75a-Set/dp/B000REYYCO/ref=cm_cr_arp_d_product_top?ie=UTF8">83mm ABEC 11 75a Flywheels</a>
-									<br>Enclosure: <a href="http://psychotiller.com/products/shop">Custom Psycotiller 18” ABS Plastic</a>
-									<br>Enclosure Mount: <a href="https://www.amazon.com/Insert-Interface-Screws-Hexagonal-Socket/dp/B0143ABKX8/ref=sr_1_1?ie=UTF8&qid=1491343784&sr=8-1&keywords=M6+E-Nut+Wood+Insert+Interface+Screws">M6 Wood Insert Screws</a>
-									<br>Trucks: <a href="https://www.amazon.com/Caliber-Trucks-Cal-Longboard-Black/dp/B00NY3Q5Q8/ref=sr_1_1?ie=UTF8&qid=1491340574&sr=8-1&keywords=Caliber+Cal+II+black">Caliber II 50-degree</a>
-									<br>Lights: <a href="https://www.amazon.com/dp/B00R49C9GI/ref=twister_B00R47363K?_encoding=UTF8&th=1">3V-LED array</a>
-									<br>Risers: <a href="https://www.muirskate.com/longboard/risers/1903/0-5-khiro-flat-hard-risers">0.5” Khiro Flat </a>
-									<br>Hardware: <a href="https://www.amazon.com/INDEPENDENT-Genuine-Parts-Phillips-Hardware/dp/B00IO8D7NC/ref=sr_1_1?ie=UTF8&qid=1491343228&sr=8-1&keywords=skateboard+hardware+1.5">1.5”</a>
-									<br>Bearings: <a href="https://www.amazon.com/Bones-Reds-Precision-Skate-Bearings/dp/B01N1S0HUD/ref=sr_1_1?ie=UTF8&qid=1491343417&sr=8-1&keywords=bones%2Breds&th=1&psc=1">Bones Reds (with spacers)</a>
-									<br>Miscellaneous Parts: 10AWG wire/5mm bullet connectors/Heat shrink tubing</br></p>
-
-									<h3>Early Prototyping</h3>
-									<span class="image main"><img src="images/earlyTesting.jpg" alt="" /></span>
-									<p>I began getting the parts together for this build in late 2015. As I was still deciding on a deck to use, a basic skateboard deck was used for testing.</p>
-
-									<h3>Additional Resources</h3>
-									<h4>Vendors:</h4>
-									<p>DIY Electric Skateboard: <a href="http://diyelectricskateboard.com">http://diyelectricskateboard.com</a>
-									<br>Enertion: <a href="http://www.enertionboards.com/">http://www.enertionboards.com/</a>
-									<br>Hobbyking: <a href="https://hobbyking.com/en_us">https://hobbyking.com/en_us</a>
-									<br>Alien Drive: <a href="http://aliendrivesystems.com/">http://aliendrivesystems.com/</a>
-									<br>Ollin Board: <a href="http://www.ollinboardcompany.com/">http://www.ollinboardcompany.com/</a></br></p>
-									<h4>Forums:</h4>
-									<p>es8 builders: <a href="https://www.electric-skateboard.builders/">https://www.electric-skateboard.builders/</a>
-									<br>Endless-Sphere: <a href="https://endless-sphere.com/forums/viewforum.php?f=35">https://endless-sphere.com/forums/viewforum.php?f=35</a>
-									<br>VESC Website: <a href="http://vedder.se/2015/01/vesc-open-source-esc/">http://vedder.se/2015/01/vesc-open-source-esc/</a></br></p>
-									<h4>Calculators:</h4>
-									<p>Speed Calculator: <a href="http://calc.esk8.it/">http://calc.esk8.it/</a>
-									<br>Gear Ratio/Center Distance: <a href="https://sdp-si.com/eStore/CenterDistanceDesigner">https://sdp-si.com/eStore/CenterDistanceDesigner</a>
-									<br>Belt Length: <a href="http://www.bbman.com/belt-length-calculator/">http://www.bbman.com/belt-length-calculator/</a>
-									</br></p>
-
-
-
-
+								<!-- Additional Resources -->
+								<a name="additional_resources"></a>
+									<h2>Additional Resources</h2>
+								<a name="vendors"></a>
+									<h4>Vendors:</h4></a></li></ul>
+									<ul><li>DIY Electric Skateboard: <a href="http://diyelectricskateboard.com">http://diyelectricskateboard.com</a></li>
+									<li>Enertion: <a href="http://www.enertionboards.com/">http://www.enertionboards.com/</a></li>
+									<li>Hobbyking: <a href="https://hobbyking.com/en_us">https://hobbyking.com/en_us</a></li>
+									<li>Alien Drive: <a href="http://aliendrivesystems.com/">http://aliendrivesystems.com/</a></li>
+									<li>Ollin Board: <a href="http://www.ollinboardcompany.com/">http://www.ollinboardcompany.com/</a></li></ul>
+								<a name="forums"></a>
+									<h4>Forums:</h4><ul>
+									<li>es8 builders: <a href="https://www.electric-skateboard.builders/">https://www.electric-skateboard.builders/</a>
+									<li>Endless-Sphere: <a href="https://endless-sphere.com/forums/viewforum.php?f=35">https://endless-sphere.com/forums/viewforum.php?f=35</a>
+									<li>VESC Website: <a href="http://vedder.se/2015/01/vesc-open-source-esc/">http://vedder.se/2015/01/vesc-open-source-esc/</a></li></ul>
+								<a name="calculators"></a>
+									<h4>Calculators:</h4><ul>
+									<li>Speed Calculator: <a href="http://calc.esk8.it/">http://calc.esk8.it/</a></li>
+									<li>Gear Ratio/Center Distance: <a href="https://sdp-si.com/eStore/CenterDistanceDesigner">https://sdp-si.com/eStore/CenterDistanceDesigner</a></li>
+									<li>Belt Length: <a href="http://www.bbman.com/belt-length-calculator/">http://www.bbman.com/belt-length-calculator/</a>
+									</li></ul>
+								<!--
+								<a name="references"></a>
+									<h4>References:</h4><ul>
+										
+									</ul>
+								-->
 								</article>
 
 							<!-- SpartaMart -->
@@ -181,28 +244,6 @@
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
 								</form>
-								<!-- Default --> 
-								<!--
-								<form method="post" action="#">
-									<div class="field half first">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field half">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="4"></textarea>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="special" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
-								-->
-
 								<ul class="icons">
 									<li><a href="https://github.com/ryan1twice" class="icon fa-github"><span class="label">Github</span></a></li>
 									<li><a href="https://www.linkedin.com/in/ryan-hennings/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
@@ -229,19 +270,18 @@
 									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
 									<h4>Preformatted</h4>
 									<pre><code>i = 0;
+										while (!deck.isInOrder()) {
+										    print 'Iteration ' + i;
+										    deck.shuffle();
+										    i++;
+										}
 
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+										print 'It took ' + i + ' iterations to sort the deck.';
+									</code></pre>
 								</section>
 
 								<section>
 									<h3 class="major">Lists</h3>
-
 									<h4>Unordered</h4>
 									<ul>
 										<li>Dolor pulvinar etiam.</li>
