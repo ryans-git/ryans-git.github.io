@@ -64,7 +64,7 @@
 								</ul>
 
 								<h3>Collaborative Filtering: <a href="#collab_filtering">Ratings Predictions</a></h3>
-								<span class="image main"><img src="images/collabfiltering.png" alt="" /></span></p>
+								<span class="image main"><img src="images/collabfiltering.png" alt="" /><sup><i>By Moshanin - <a href="https://en.wikipedia.org/wiki/Collaborative_filtering#/media/File:Collaborative_filtering.gif">https://commons.wikimedia.org/w/index.php?curid=24097346</a></i></sup></span></p>
 								<p> For a class project I took a crack a classic machine learning algorithm, Collaborative Filtering. The project is designed similar to the “Netflix Prize”, but uses a python web scrapper to retrieve movie ratings from Rotten Tomatoes and IMDB. Like many collaborative filtering algorithms used in commercial websites and programs, a baseline predictor, user and movie biases, Cosine similarity, and nearest neighbor are used to predict user movie ratings. The report used a small sample set the easily demonstrate the core, underlying algorithm.</p>
 								<ul class="actions">
 									<li><a href="#collab_filtering" class="button">More Info</a></li>
@@ -89,7 +89,9 @@
 
 							<!-- Bronco -->
 								<article id="bronco">
+									<!-- <button onclick="goBack()">< Back</button> -->
 									<h2 class="major">The Bronco</h2>
+
 									<span class="image main"><img src="images/eboard.jpeg" alt="" /></span>
 								<!-- Table of Contents -->
 									<h2>Contents</h2>
@@ -156,11 +158,12 @@
 									<h2>Parts List</h2>
 								<h4>Power System:</h4></a></li></ol>
 									<ul><li>Battery: 10S1P 5aH (<a href="https://hobbyking.com/en_us/turnigy-5000mah-2s-7-4v-60c-hardcase-pack.html">Turnigy 5Ah 2S 60C Hardcase Packs x5</a>)</li>
+									<li>High Current Switch: <a href="https://github.com/vedderb/SparkSwitch"> Vedder Anti-Spark</a></li>
+									<li>Switch: <a href="https://www.amazon.com/gp/product/B017KP67FY/ref=oh_aui_detailpage_o03_s00?ie=UTF8&psc=1">Latching LED Pushbutton SPDT</a></li>
 									<li>Battery Management System: <a href="http://www.batterysupports.com/36v-37v-42v-10s-60a-10x-36v-lithium-ion-lipolymer-battery-bms-p-267.html">42V-10S-60A LiPo BMS</a></li>
 									<li>Charger: <a href="https://www.amazon.com/gp/product/B01HXMY0TE/ref=od_aui_detailpages00?ie=UTF8&psc=1">42V-2A Fast Charger</a>
 									<li>Charger Replacement Plug: <a href="https://cart.electricscooterparts.com/ProductDetails.asp?ProductCode=CNX-505	">3 Pin Inline</a></li>
 									<li>Charge Port: <a href="https://cart.electricscooterparts.com/ProductDetails.asp?ProductCode=CNX-515">3-Pin Inline Port</a></li>
-									<li>Switch: <a href="https://www.amazon.com/gp/product/B017KP67FY/ref=oh_aui_detailpage_o03_s00?ie=UTF8&psc=1">Latching LED Pushbutton SPDT</a></li>
 									<li>Voltmeter: <a href="https://www.amazon.com/5-120V-Voltmeter-3-Digital-Display-Voltage/dp/B016FHSY3Q">5-120V DC LED meter</a></li>
 									</ul>
 								<h4>Drive System:</h4><ul>
@@ -203,6 +206,8 @@
 									<li>Gear Ratio/Center Distance: <a href="https://sdp-si.com/eStore/CenterDistanceDesigner">https://sdp-si.com/eStore/CenterDistanceDesigner</a></li>
 									<li>Belt Length: <a href="http://www.bbman.com/belt-length-calculator/">http://www.bbman.com/belt-length-calculator/</a>
 									</li></ul>
+
+									<a href="#projects" class="button icon fa-angle-left">Back</a>
 								<!--
 								<a name="references"></a>
 									<h4>References:</h4><ul>
@@ -213,16 +218,16 @@
 
 							<!-- Collaborative Filtering -->
 								<article id="collab_filtering">
-									<h2 class="major">Collaborative Filtering</h2>
-									<h3>Predicting Movie Ratings with data from a web scrapper and using a collaborative filtering algorithm</h3>
-									<span class="image main"><img src="images/Collaborative_filtering.gif" alt="" /><i>By Moshanin - <a href="https://en.wikipedia.org/wiki/Collaborative_filtering#/media/File:Collaborative_filtering.gif">https://commons.wikimedia.org/w/index.php?curid=24097346</a></i></span>
+									<h2><u>Collaborative Filtering</u></h2>
+									<h3>Predicting Movie Ratings using a collaborative filtering algorithm with data from a web scrapper</h3>
+									<span class="image main"><img src="images/Collaborative_filtering.gif" alt="" /><sup><i>By Moshanin - <a href="https://en.wikipedia.org/wiki/Collaborative_filtering#/media/File:Collaborative_filtering.gif">https://commons.wikimedia.org/w/index.php?curid=24097346</a></i></sup></span>
 									
 								<!-- Table of Contents -->
 									<h2>Contents</h2>
 									<ol>
 										<li><a href="#introductionCF">Introduction</a><br>&nbsp;a.&nbsp;&nbsp;&nbsp;Background</li>
 										<li>
-											Approach<br>
+											<a href="#approach">Approach</a><br>
 											&nbsp;a.&nbsp;&nbsp;&nbsp;Tools<br>
 											&nbsp;b.&nbsp;&nbsp;&nbsp;Dataset<br>
 											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i.&nbsp;&nbsp;&nbsp;Web Scrapping<br>
@@ -244,7 +249,129 @@
 									<p>
 										This post provides an overview for how collaborative filtering can offer a solution to predicting user ratings of a movie based on other user ratings. Common collaborative filtering implementation methods that are used in commercial websites and programs include a baseline predictor, user and movie biases, Cosine similarity, nearest neighbor predictor, and root mean squared error (RMSE) for evaluating the results. The project worked on a small sample set which was able to easily demonstrate the core underlying algorithm. This prediction engine does have limitations as errors generated would be expected to rise as the user base expanded and they became more diverse. Recommendations discussed at the end of the post include incorporating a test set to more accurately quantify the results, using a more powerful language handle larger datasets, and implementing more complex inner algorithms for improved predictions.
 										</p>
+									<h4>Background</h4>
+									<p>
+										Recommendation engines commonly use collaborative filtering of data from many users to make predictions about a given user’s preferences. The philosophy behind collaborative filtering is that ideal recommendations to a user will come from another user that has similar preferences. These preferences can be calculated by a user rating certain items and creating an estimated representation of that user’s interests. The algorithm would then find similar users that can offer recommendations for an item that the target user has not yet rated.
+									</p>
+									<p>
+										The gif at the top of this page taken from the collaborative filtering Wikipedia page demonstrates how this can be achieved. In this general case the users rate things like books, pictures, games, and videos to create a data set for establishing their preferences. Using collaborative filtering, predictions could then be made for whether or not the target user likes the video. The basis for the predictions is from ratings that similar users rated the target item. 
+									</p>
+									<span class="image main"><img src="images/netflix.jpg" alt="" /></span>
+									<p>
+										The project follows a scaled down version of the Netflix Prize open competition to build a collaborative filtering algorithm that could improve their in-house recommendation system for predicting ratings by 10%. Teams were given a data set consisting of 1.5 million ratings from nearly 500,000 users for 17,000 movies. They were also given the time of when the movie was rated. However, they were not given anything else pertaining to the user or the films. The algorithms would be tested on a separate set of 1.5 million ratings that were not given to the teams. A grand prize of $1 million was given in 2009 when "BellKor's Pragmatic Chaos" team was able to beat the current prediction algorithm by 10.06%. Their model consisted of a baseline prediction for each user that would take the average of a movie and add a weight to it based on user rating tendencies such as, time of the rating and frequency of ratings. They also used matrix factorization which is used in many collaborative filtering engines, including the one used for this project. The increased accuracy ended up being too small for justifying the engineering that would be required to implement the winning algorithm in their production environment. Netflix discontinued the competition as lawsuits arose due to insufficient interference control in their datasets allowing users to be identified.
+									</p>
+								<!-- Approach -->
+									<a name="approach"></a>
+									<h2>Approach</h2>
+									<p>
+										This project took user ratings for various movies and removed some ratings to create a test set to compare against. The algorithm follows a model used by the <a href="https://www.coursera.org/learn/networks-illustrated#">“Networks Illustrated”</a> course on Coursera by Princeton University. 
+									</p>
+									<h4>Tools</h4>
+									<p>
+										The prediction engine for this project is written in Python 2.7. The scripting language was originally chosen as numerous libraries make it easy to build a web scrapper. It is also a simple to read language and allows the functions used to be presented clearly and concisely. Screenshots shown are from the mac OS terminal but any operating system with a Python 2.7 interpreter should be able to recreate the results. The complete source code can be found in the <a href="https://github.com/ryan1twice/CollaborativeFilteringMovieRatings">GitHub repository</a>.
+									</p>
+									<h4>Dataset</h4>
+									<p>
+										In order to create a prediction engine for user ratings of movies, we need data to work with. In this project we will keep it small with just 12 users rating 10 different movies. The reasoning for keeping the set small is to easily illustrate the calculations made at each step in this paper. There are massive datasets available online, such as MovieLens, which contains over 20 million ratings for 27,000 movies by 138,000 users. Problems with these massive sets are that they are incredibly sparse, usually over 99% empty. With the small sample size of this project, we can still accurately demonstrate the core algorithm associated with collaborative filtering in an easy to read manner.
+									</p>
+									<span class="image main"><img src="images/nextflixDataset.png" alt="" /><sup><i>“Netflix Prize” Networks Illustrated (Brinton,Chaing)</i></sup></span>
+									<p>
+										The Netflix Prize data set was removed and only ones left floating around online are extremely outdated with most popular titles not even available anymore. To emulate the same idea as the Netflix Prize, movies were selected from Netflix that were available as of March 2016. The titles chosen were mostly popular titles that received mixed ratings.
+									</p>
+									<span class="image main"><img src="images/movies.png" alt="" /></span>
+									<p>
+										As we can see, there is a decent spread in movie genres and years for the small sample size. There was no user in the set who had seen all ten movies and none that had seen less than half
+									</p>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Genres</th>
+													<th>Year</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Django Unchained</td>
+													<td>Drama, Western</td>
+													<td>2012</td>
+												</tr>
+												<tr>
+													<td>The Interview</td>
+													<td>Comedy</td>
+													<td>2014</td>
+												</tr>
+												<tr>
+													<td>The Benchwarmer</td>
+													<td>Comedy, Sport</td>
+													<td>2006</td>
+												</tr>
+												<tr>
+													<td>Silver Linings Playbook</td>
+													<td>Drama, Romance</td>
+													<td>2012</td>
+												</tr>
+												<tr>
+													<td>Goon</td>
+													<td>Comedy, Sport</td>
+													<td>2011</td>
+												</tr>
+												<tr>
+													<td>Pulp Fiction</td>
+													<td>Crime, Drama</td>
+													<td>1994</td>
+												</tr>
+												<tr>
+													<td>Days of Thunder</td>
+													<td>Action, Drama</td>
+													<td>1990</td>
+												</tr>
+												<tr>
+													<td>Sharknado 3</td>
+													<td>Horror, Sci-Fi</td>
+													<td>2015</td>
+												</tr>
+												<tr>
+													<td>The Lazarus Effect</td>
+													<td>Horror, Sci-Fi, Thriller</td>
+													<td>2015</td>
+												</tr>
+												<tr>
+													<td>Grease</td>
+													<td>Musical, Romance</td>
+													<td>1978</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<p>
+										The user base was built by creating a simple Google Forms survey that listed ten movies with the choices to rate from one to five stars or have not seen. After there were more than 10 responses, I felt there was enough data to work with to make predictions.
+									</p>
+									<p>
+										The Google Forms automatically creates a spreadsheet that can be saved as a .csv file and accessed by the Python script. The file needed some modification before storing the values as the rows were strings with the number and then “stars” written after. Movies that the user had not seen were given a “-1” value. The code below shows how the values for each rating from the users was extracted from the .csv file.
+										<pre><code>f = open('/collabFiltering/formResponses.csv')
+csvfile = csv.reader(f)
+user = [users() for i in range(12)] #list of users
+user2 = [users() for i in range(12)] #list of users
+index = 0
+for row in csvfile:
+    user[index].number = index+1
+    uRatings = row
+    uRatings.pop(0) #pop timestamp off
+    for stars in uRatings: #pop "stars" off each
+        uStars = stars.replace("stars","")
+        uStars = uStars.replace("star","")
+        uStars = uStars.replace("Have not seen","-1")
+        uStars = uStars.replace(" ","")
+        user[index].addRating(int(uStars))
+        user2[index].addRating(uStars)
+    index = index+1</code></pre>
+									</p>
 
+
+
+									<a href="#projects" class="button icon fa-angle-left">Back</a>
 								</article>
 
 							<!-- SpartaMart -->
@@ -561,6 +688,11 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				function goBack() {
+				    window.history.back();
+				}
+			</script>
 
 	</body>
 </html>
