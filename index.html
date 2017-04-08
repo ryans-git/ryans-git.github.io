@@ -218,7 +218,7 @@
 							<!-- Collaborative Filtering -->
 								<article id="collab_filtering">
 									<h2><u>Collaborative Filtering</u></h2>
-									<h3>Predicting Movie Ratings using a collaborative filtering algorithm with data from a web scrapper</h3>
+
 									<span class="image main"><img src="images/Collaborative_filtering.gif" alt="" /><sup><i>By Moshanin - <a href="https://en.wikipedia.org/wiki/Collaborative_filtering#/media/File:Collaborative_filtering.gif">https://commons.wikimedia.org/w/index.php?curid=24097346</a></i></sup></span>
 									
 								<!-- Table of Contents -->
@@ -248,7 +248,7 @@
 								<a name="introductionCF"></a>
 									<h2>Introduction</h2>
 									<p>
-										This post provides an overview for how collaborative filtering can offer a solution to predicting user ratings of a movie based on other user ratings. Common collaborative filtering implementation methods that are used in commercial websites and programs include a baseline predictor, user and movie biases, Cosine similarity, nearest neighbor predictor, and root mean squared error (RMSE) for evaluating the results. The project worked on a small sample set which was able to easily demonstrate the core underlying algorithm. This prediction engine does have limitations as errors generated would be expected to rise as the user base expanded and they became more diverse. Recommendations discussed at the end of the post include incorporating a test set to more accurately quantify the results, using a more powerful language handle larger datasets, and implementing more complex inner algorithms for improved predictions.
+										This post provides an overview for how <a href="https://en.wikipedia.org/wiki/Collaborative_filtering">Collaborative Filtering</a> can offer a solution to predicting user ratings of a movie based on other user ratings. Common collaborative filtering implementation methods that are used in commercial websites and programs include a baseline predictor, user and movie biases, Cosine similarity, nearest neighbor predictor, and root mean squared error (RMSE) for evaluating the results. The project worked on a small sample set which was able to easily demonstrate the core underlying algorithm. This prediction engine does have limitations as errors generated would be expected to rise as the user base expanded and they became more diverse. Recommendations discussed at the end of the post include incorporating a test set to more accurately quantify the results, using a more powerful language handle larger datasets, and implementing more complex inner algorithms for improved predictions.
 										</p>
 									<h3>Background</h3>
 									<p>
@@ -259,7 +259,7 @@
 									</p>
 									<span class="image main"><img src="images/netflix.jpg" alt="" /></span>
 									<p>
-										The project follows a scaled down version of the Netflix Prize open competition to build a collaborative filtering algorithm that could improve their in-house recommendation system for predicting ratings by 10%. Teams were given a data set consisting of 1.5 million ratings from nearly 500,000 users for 17,000 movies. They were also given the time of when the movie was rated. However, they were not given anything else pertaining to the user or the films. The algorithms would be tested on a separate set of 1.5 million ratings that were not given to the teams. A grand prize of $1 million was given in 2009 when "BellKor's Pragmatic Chaos" team was able to beat the current prediction algorithm by 10.06%. Their model consisted of a baseline prediction for each user that would take the average of a movie and add a weight to it based on user rating tendencies such as, time of the rating and frequency of ratings. They also used matrix factorization which is used in many collaborative filtering engines, including the one used for this project. The increased accuracy ended up being too small for justifying the engineering that would be required to implement the winning algorithm in their production environment. Netflix discontinued the competition as lawsuits arose due to insufficient interference control in their datasets allowing users to be identified.
+										The project follows a scaled down version of the <a href="https://en.wikipedia.org/wiki/Netflix_Prize">Netflix Prize</a>. It was an open competition to build a collaborative filtering algorithm that could improve their in-house recommendation system for predicting ratings by 10%. Teams were given a data set consisting of a user, their rating for a movie, and the date they rated the movie. However, they were not given anything else pertaining to the user or the films. The algorithms would be tested on a separate set of ratings that were not given to the teams. A grand prize of $1 million was given in 2009 when "BellKor's Pragmatic Chaos" team was able to beat the current prediction algorithm by 10.06%. Their model consisted of a baseline prediction for each user that would take the average of a movie and add a weight to it based on user rating tendencies such as, time of the rating and frequency of ratings. They also used matrix factorization which is used in many collaborative filtering engines. The increased accuracy ended up being too small for justifying the engineering that would be required to implement the winning algorithm in their production environment. Netflix discontinued the competition as lawsuits arose due to insufficient interference control in their datasets allowing users to be identified.
 									</p>
 								<!-- Approach -->
 									<a name="approach"></a>
@@ -270,12 +270,12 @@
 									<a name="tools"></a>
 									<h3>Tools</h3>
 									<p>
-										The prediction engine for this project is written in Python 2.7. The scripting language was originally chosen as numerous libraries make it easy to build a web scrapper. It is also a simple to read language and allows the functions used to be presented clearly and concisely. Screenshots shown are from the mac OS terminal but any operating system with a Python 2.7 interpreter should be able to recreate the results. The complete source code can be found in the <a href="https://github.com/ryan1twice/CollaborativeFilteringMovieRatings">GitHub repository</a>.
+										The prediction engine for this project is written in Python 2.7. It is a simple to read language and allows the functions used to be presented clearly and concisely. Screenshots shown are from the mac OS terminal but any operating system with a Python 2.7 interpreter should be able to recreate the results. The complete source code can be found in the <a href="https://github.com/ryan1twice/CollaborativeFilteringMovieRatings">GitHub repository</a>. The equations are diplayed on this webpage using <a href="https://www.mathjax.org/">MathJax</a>. To format the equations in LaTex so they can be interpreted by MathJax, I used <a href="https://www.codecogs.com/latex/eqneditor.php">this converter</a>.
 									</p>
 									<a name="dataset"></a>
 									<h3>Dataset</h3>
 									<p>
-										In order to create a prediction engine for user ratings of movies, we need data to work with. In this project we will keep it small with just 12 users rating 10 different movies. The reasoning for keeping the set small is to easily illustrate the calculations made at each step in this paper. There are massive datasets available online, such as MovieLens, which contains over 20 million ratings for 27,000 movies by 138,000 users. Problems with these massive sets are that they are incredibly sparse, usually over 99% empty. With the small sample size of this project, we can still accurately demonstrate the core algorithm associated with collaborative filtering in an easy to read manner.
+										In order to create a prediction engine for user ratings of movies, we need data to work with. In this project we will keep it small with just 12 users rating 10 different movies. The reasoning for keeping the set small is to easily illustrate the calculations made at each step in this paper. There are massive datasets available online, such as <a href="https://grouplens.org/datasets/movielens/">MovieLens</a>, where some sets contain over 20 million ratings for 27,000 movies by 138,000 users. Problems with these massive sets are that they are incredibly sparse, usually over 99% empty. With the small sample size of this project, we can still accurately demonstrate the core algorithm associated with collaborative filtering in an easy to read manner.
 									</p>
 									<span class="image main"><img src="images/nextflixDataset.png" alt="" /><sup><i>“Netflix Prize” Networks Illustrated (Brinton,Chaing)</i></sup></span>
 									<p>
@@ -349,7 +349,7 @@
 										</table>
 									</div>
 									<p>
-										The user base was built by creating a simple Google Forms survey that listed ten movies with the choices to rate from one to five stars or have not seen. After there were more than 10 responses, I felt there was enough data to work with to make predictions.
+										The user base was built by creating a simple <a href="https://docs.google.com/forms/u/0/">Google Forms</a> survey that listed ten movies with the choices to rate from one to five stars or have not seen. After there were more than 10 responses, I felt there was enough data to work with to make predictions.
 									</p>
 									<p>
 										The Google Forms automatically creates a spreadsheet that can be saved as a .csv file and accessed by the Python script. The file needed some modification before storing the values as the rows were strings with the number and then “stars” written after. Movies that the user had not seen were given a “-1” value. The code below shows how the values for each rating from the users was extracted from the .csv file.
@@ -374,7 +374,7 @@ for row in csvfile:
 									<a name="algorithm"></a>
 									<h3>Collaborative Filtering Algorithm</h3>
 									<p>
-										Now all of the data necessary for this project had been obtained, the actual implementation of the collaborative filtering to predict ratings can be designed. This section will walk through each step with the different methods used to achieve the predictions.
+										Now that all of the data necessary for this project had been obtained, the actual implementation of the collaborative filtering to predict ratings can be designed. This section will walk through each step with the different methods used to achieve the predictions.
 									</p>
 									<a name="baseline_predictor"></a>
 									<h4>Baseline Predictor</h4>
@@ -382,7 +382,7 @@ for row in csvfile:
 										Most collaborative filtering algorithms, including the Netflix Prize winner, use a baseline prediction. This is to weight the prediction ratings either higher or lower based on that users ratings tendencies. For example, if they systematically rate movies higher than most other users, then that effect needs to be captured for the final prediction. The equation below shows how the baseline prediction is obtained:
 									</p>\[b_{u,i}=\mu+b_{u}+b_{i}\]
 									<p>
-										Where \(\mu\) is the overall rating average for that movie, \(b_{u}\) and \(b_{i}\) are the bias values for the user and movie respectively. In simple terms, it is the raw average + user bias + movie bias (the raw average being the mean of all ratings in the matrix). The raw average for the data used in this project is 3.7, calculated in the function shown in the function <i>raw_average()</i>
+										Where \(\mu\) is the overall rating average for that movie, \(b_{u}\) and \(b_{i}\) are the bias values for the user and movie respectively. In simple terms, it is the raw average + user bias + movie bias (the raw average being the mean of all ratings in the matrix). The raw average for the data used in this project is 3.7, calculated in the function <i>raw_average()</i> shown below.
 									</p>
 									<pre><code>def raw_average(userClass):
 	number_of_ratings = 0
@@ -432,7 +432,7 @@ return round(float(sum)/float(number_of_ratings),1)-raw_average(user_obj)</code>
 									<span class="image main"><img src="images/biasmatrix.png" alt="" /></span>
 									<p>
 									<p>
-										Although some baselines would come out to be less than 1 or greater than 5, the actual ratings cannot, therefore those values are just given the baselines 1 or 5. Root mean squared error (RMSE) will be used to help quantify this data in the results section. To create this bias matrix we can use the code:
+										Although some baselines would come out to be less than 1 or greater than 5, the actual ratings cannot, therefore those values are just given the baselines 1 or 5. To create this bias matrix we can use the code:
 									<pre><code>bias_obj = [users() for i in range(len(users))]
 for j in range(0,len(users),1):
     for i in range(0,len(movies),1):
@@ -446,15 +446,15 @@ for j in range(0,len(users),1):
 									<a name="similarity"></a>
 									<h4>Similarity</h4>
 									<p>
-										With the baseline predictors complete, the predictions can be taken a step further by looking at how similar users are to each other. This is really the essence of what “collaborative filtering” is; searching for patterns in user behavior to enhance the rating estimates. Both strongly positive and negative correlations are helpful. So if two users are somewhat similar or dissimilar, they become neighbors. The patterns for how users rated movies can also be calculated (so it’s not just trying to find patterns on the row vectors, but also on the column vectors). 
+										With the baseline predictors complete, the predictions can be taken a step further by looking at how similar users are to each other. This is really the essence of what <i>collaborative filtering</i> is; searching for patterns in user behavior to enhance the rating estimates. Both strongly positive and negative correlations are helpful. So if two users are somewhat similar or dissimilar, they become neighbors. The patterns for how users rated movies can also be calculated (so it’s not just trying to find patterns on the row vectors, but also on the column vectors). 
 									</p>
 									<h5>Cosine Similarity</h5>
 									<p>
-										Cosine similarity was used to compare the users in this data set. Another method, Pearson correlation, is popular in collaborative filtering, but it really only becomes more effective on large, sparse sets (like the MovieLens database). This dataset is small and relatively dense so the cosine similarity will not only be more efficient, but probably more accurate too.
+										<a href="https://en.wikipedia.org/wiki/Cosine_similarity">Cosine similarity</a> was used to compare the users in this data set. Another method, Pearson correlation, is popular in collaborative filtering, but it really only becomes more effective on large, sparse sets (like the MovieLens database). This dataset is small and relatively dense so the cosine similarity will not only be more efficient, but probably more accurate too.
 									</p>
 									<p>
 										The cosine similarity method takes the normalized dot product of two vectors, which in this algorithm is users and their ratings. An angle of 0 degrees (users rated exactly the same) would produce a value of 1. Similarly, if they are complete opposites producing an angle of 180 degrees, the value will be -1. As mentioned before, this negative correlation is still helpful since we can predict that the users will continue to rate things contradictory.<br><br>
-										To implement this design, the equation below shows that the angle is derived by taking the dot product and dividing by the Euclidean norms:
+										To implement this design, the equation below shows that the angle is derived by taking the dot product and dividing by the <a href="https://en.wikipedia.org/wiki/Norm_(mathematics)#Euclidean_norm">Euclidean norms</a>:
 										\[s(u,v)=\frac{r_{u}r_{v}}{\left \| r_{u} \right \|\left \| r_{v} \right \|}=\frac{\sum r_{u,i}r_{v,i}}{\sqrt{\sum r^2_{u,i}}\sqrt{\sum r^2_{v,i}}}\]
 									</p>
 									<p>
@@ -560,7 +560,7 @@ for userID in range(0,len(users),1):
     								<a name="rmse"></a>
     								<h3>Root Mean Squared Error</h3>
     								<p>
-    									A common way of measuring the accuracy of recommendation  engines in calculating the root mean squared error (RMSE). In simple terms, it indicates how much error is between two datasets. This is the method that was used for the Netflix Prize and will be used to evaluate this project as well. For context, the Netflix Prize winners improved the RMSE of the Netflix in-house algorithm by 10.06%. One of the reasons Netflix used this as the evaluation method is that it places a greater emphasis on large errors. For example, a prediction rating that is 2 stars off, it is penalized 8 times harsher than a prediction rating that is 0.2 stars off. The RMSE takes the sum of the average ratings minus the predicted ratings squared. Then divides this number by the total number of predictions in the dataset and takes the square root of that value. This can be seen more clearly in the equation:
+    									A common way of measuring the accuracy of recommendation  engines in calculating the <a href="https://en.wikipedia.org/wiki/Root-mean-square_deviation">root mean squared error (RMSE)</a>. In simple terms, it indicates how much error is between two datasets. This is the method that was used for the Netflix Prize and will be used to evaluate this project as well. For context, the Netflix Prize winners improved the RMSE of the Netflix in-house algorithm by 10.06%. One of the reasons Netflix used this as the evaluation method is that it places a greater emphasis on large errors. For example, a prediction rating that is 2 stars off, it is penalized 8 times harsher than a prediction rating that is 0.2 stars off. The RMSE takes the sum of the average ratings minus the predicted ratings squared. Then divides this number by the total number of predictions in the dataset and takes the square root of that value. This can be seen more clearly in the equation:
     									\[RMSE=\sqrt{\frac{1}{N}\sum_{N}^{i=1}(x_i-\hat{x_i})^2}\]
     								</p>
     								<p>
