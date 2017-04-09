@@ -65,7 +65,7 @@
 
 								<h3>Collaborative Filtering: <a href="#collab_filtering">Ratings Predictions</a></h3>
 								<span class="image main"><img src="images/collabfiltering.png" alt="" /><sup><i>By Moshanin - <a href="https://en.wikipedia.org/wiki/Collaborative_filtering#/media/File:Collaborative_filtering.gif">https://commons.wikimedia.org/w/index.php?curid=24097346</a></i></sup></span></p>
-								<p> For a class project I took a crack a classic machine learning algorithm, Collaborative Filtering. The project is designed similar to the “Netflix Prize”, but uses a python web scrapper to retrieve movie ratings from Rotten Tomatoes and IMDB. Like many collaborative filtering algorithms used in commercial websites and programs, a baseline predictor, user and movie biases, Cosine similarity, and nearest neighbor are used to predict user movie ratings. The report used a small sample set the easily demonstrate the core, underlying algorithm.</p>
+								<p> For a class project I took a crack a classic machine learning algorithm, Collaborative Filtering. The project is designed similar to the “Netflix Prize” competition. Like many collaborative filtering algorithms used in commercial websites and programs, a baseline predictor, user and movie biases, cosine similarity, and nearest neighbor are used to predict user movie ratings. The report used a small sample set the easily demonstrate the core, underlying algorithm.</p>
 								<ul class="actions">
 									<li><a href="#collab_filtering" class="button">More Info</a></li>
 								</ul>
@@ -248,14 +248,14 @@
 								<a name="introductionCF"></a>
 									<h2>Introduction</h2>
 									<p>
-										This post provides an overview for how <a href="https://en.wikipedia.org/wiki/Collaborative_filtering">Collaborative Filtering</a> can offer a solution to predicting user ratings of a movie based on other user ratings. Common collaborative filtering implementation methods that are used in commercial websites and programs include a baseline predictor, user and movie biases, Cosine similarity, nearest neighbor predictor, and root mean squared error (RMSE) for evaluating the results. The project worked on a small sample set which was able to easily demonstrate the core underlying algorithm. This prediction engine does have limitations as errors generated would be expected to rise as the user base expanded and they became more diverse. Recommendations discussed at the end of the post include incorporating a test set to more accurately quantify the results, using a more powerful language handle larger datasets, and implementing more complex inner algorithms for improved predictions.
+										This project demonstrates how <a href="https://en.wikipedia.org/wiki/Collaborative_filtering">Collaborative Filtering</a> can predict user ratings of a movie based on other user ratings. The algorithm discussed in this project uses a baseline predictor, user and movie biases, cosine similarity, nearest neighbor predictor, and root mean squared error (RMSE) for evaluating the results. Many commerical implementations will use some variation of these core concepts. The project worked on a small sample set which was able to easily demonstrate the core underlying algorithm. 
 										</p>
 									<h3>Background</h3>
 									<p>
 										Recommendation engines commonly use collaborative filtering of data from many users to make predictions about a given user’s preferences. The philosophy behind collaborative filtering is that ideal recommendations to a user will come from another user that has similar preferences. These preferences can be calculated by a user rating certain items and creating an estimated representation of that user’s interests. The algorithm would then find similar users that can offer recommendations for an item that the target user has not yet rated.
 									</p>
 									<p>
-										The gif at the top of this page taken from the collaborative filtering Wikipedia page demonstrates how this can be achieved. In this general case the users rate things like books, pictures, games, and videos to create a data set for establishing their preferences. Using collaborative filtering, predictions could then be made for whether or not the target user likes the video. The basis for the predictions is from ratings that similar users rated the target item. 
+										The gif shown at the top of this page demonstrates how this can be achieved. In this general case the users rate things like books, pictures, games, and videos to create a data set for establishing their preferences. Using collaborative filtering, predictions could then be made for whether or not the target user likes the video. The basis for the predictions is from ratings that similar users rated the target item. 
 									</p>
 									<span class="image main"><img src="images/netflix.jpg" alt="" /></span>
 									<p>
