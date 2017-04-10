@@ -134,7 +134,7 @@
 									<p>
 										Some nice scuff makes from when the board went rogue and ran into tires and curbs.</p>
 									<p>
-										This website is new and incomplete. A complete write up is coming soon. Images from the first fully fuctional design are shown below.</p>
+										This website is new and incomplete. A complete write up is coming soon. Images from the first fully functional design are shown below.</p>
 									<span class="image main"><img src="images/firstTest.jpg" alt="" /></span>
 									<p>
 										Initial testing</p>
@@ -143,13 +143,13 @@
 										Originally used two 5s 5aH LiPos to power the board. I have since switched to using five 2s 5aH (so the same 10 cell-37V total) for a smaller profile.</p>
 									<span class="image main"><img src="images/enclosure.jpeg" alt="" /></span>
 									<p>
-										The original enclosure (Flagship V2 by psycotiller). With the new lower profile batteries, a slimmer custome enclosure can be used.</p>
+										The original enclosure (Flagship V2 by psycotiller). With the new lower profile batteries, a slimmer custom enclosure can be used.</p>
 									<span class="image main"><img src="images/voltmeters.jpeg" alt="" /></span>
 									<p>
-										I used a voltmeter to monitor each of the two 5 cell batteriers originally, since they kept discharging at different rates.</p>
+										I used a voltmeter to monitor each of the two 5 cell batteries originally, since they kept discharging at different rates.</p>
 									<span class="image main"><img src="images/drivetrain.jpeg" alt="" /></span>
 									<p>
-										The original drivetrain used a 9mm wide belt at a 16T/36T gearing ratio. I recently switched to a 15mm wide belt which has improved both the acceleration and brake tremendously. The tradeoff is that it seems to be loosing efficency. Not a major issue though, since I don't plan on reaching the 30mph speed the board can technically reach at full efficency.</p>
+										The original drivetrain used a 9mm wide belt at a 16T/36T gearing ratio. I recently switched to a 15mm wide belt which has improved both the acceleration and brake tremendously. The trade off is that it seems to be loosing efficiency. Not a major issue though, since I don't plan on reaching the 30mph speed the board can technically reach at full efficiency.</p>
 									<span class="image main"><img src="images/boardTopView.jpeg" alt="" /></span>
 
 								<!-- Parts List -->
@@ -248,7 +248,7 @@
 								<a name="introductionCF"></a>
 									<h2>Introduction</h2>
 									<p>
-										This project demonstrates how <a href="https://en.wikipedia.org/wiki/Collaborative_filtering">Collaborative Filtering</a> can predict user ratings of a movie based on other user ratings. The algorithm discussed in this project uses a baseline predictor, user and movie biases, cosine similarity, nearest neighbor predictor, and root mean squared error (RMSE) for evaluating the results. Many commerical implementations will use some variation of these core concepts. The project worked on a small sample set which was able to easily demonstrate the core underlying algorithm. 
+										This project demonstrates how <a href="https://en.wikipedia.org/wiki/Collaborative_filtering">Collaborative Filtering</a> can predict user ratings of a movie based on other user ratings. The algorithm discussed in this project uses a baseline predictor, user and movie biases, cosine similarity, nearest neighbor predictor, and root mean squared error (RMSE) for evaluating the results. Many commercial implementations will use some variation of these core concepts. The project worked on a small sample set which was able to easily demonstrate the core underlying algorithm. 
 										</p>
 									<h3>Background</h3>
 									<p>
@@ -270,7 +270,7 @@
 									<a name="tools"></a>
 									<h3>Tools</h3>
 									<p>
-										The prediction engine for this project is written in Python 2.7. It is a simple to read language and allows the functions used to be presented clearly and concisely. Screenshots shown are from the mac OS terminal but any operating system with a Python 2.7 interpreter should be able to recreate the results. The complete source code can be found in the <a href="https://github.com/ryan1twice/CollaborativeFilteringMovieRatings">GitHub repository</a>. The equations are diplayed on this webpage using <a href="https://www.mathjax.org/">MathJax</a>. To format the equations in LaTex so they can be interpreted by MathJax, I used <a href="https://www.codecogs.com/latex/eqneditor.php">this converter</a>.
+										The prediction engine for this project is written in Python 2.7. It is a simple to read language and allows the functions used to be presented clearly and concisely. Screenshots shown are from the mac OS terminal but any operating system with a Python 2.7 interpreter should be able to recreate the results. The complete source code can be found in the <a href="https://github.com/ryan1twice/CollaborativeFilteringMovieRatings">GitHub repository</a>. The equations are displayed on this webpage using <a href="https://www.mathjax.org/">MathJax</a>. To format the equations in LaTex so they can be interpreted by MathJax, I used <a href="https://www.codecogs.com/latex/eqneditor.php">this converter</a>.
 									</p>
 									<a name="dataset"></a>
 									<h3>Dataset</h3>
@@ -506,7 +506,7 @@ for i in range(0,len(users),1):
         similarity = userCosineSimilarity(baseline_error_obj[i].movie_ratings, baseline_error_obj[j].movie_ratings)
         cosine_objs[i].addSimilarity(similarity)</code></pre>
         							<p>
-        								For more information on cosine similarity along with other similarity measurement implentations in Python, I found <a href="http://dataaspirant.com/2015/04/11/five-most-popular-similarity-measures-implementation-in-python/">this article</a> helpful.
+        								For more information on cosine similarity along with other similarity measurement implantations in Python, I found <a href="http://dataaspirant.com/2015/04/11/five-most-popular-similarity-measures-implementation-in-python/">this article</a> helpful.
         							</p>
 
         							<h5>Neighborhood Predictor</h5>
@@ -585,7 +585,7 @@ for userID in range(0,len(users),1):
     								</ul>
     								<p>
     									The predictions became more accurate as the criteria for evaluating the prediction increased. To demonstrate the improvements in simple terms, a percentage progression can be shown using the equation:
-    									\[(1-\frac{TestingRMSE}{RawAvgRMSE})*100=Percent Improvemnt\]
+    									\[(1-\frac{TestingRMSE}{RawAvgRMSE})*100=Percent Improvement\]
     								</p>
     								<p>
     									Using this shows that the baseline predictor leads to a 6.5% improvement and the neighborhood predictor yields 26.2% improvement. This is a good size improvement for the training data, however, usually a test dataset is used to measure the algorithms accuracy. Creating a test dataset is as simple as removing a few of the ratings taken from the survey and testing the RMSE of their values to the final neighborhood predictor values. This is an aspect of the project that was not thought about beforehand so there was going to be no test data available. Luckily some users from the survey were able to rate some movies after, that they previously had not seen. This turned out to be even more useful since all of their original ratings could be used. The new user ratings were: user 1 rating movie 9 a score of 1, user 7 rating a score of 3, and user 11 rating movies 1 and 9 a score of 4 and 1. The RMSE of these values was 0.5147 for a ridiculous 127% improvement from the raw average. This is an abnormally low RMSE that is almost certainly due to the small sample size. Usually the RMSE of test data like this will actually be a little bit higher than the training set used, since the values in the test set are not included in developing the user/movie biases in the baseline predictions or even the neighbors.<br><br>
