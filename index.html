@@ -1,934 +1,218 @@
 <!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Ryan Hennings</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link rel="icon" href="images/card_icon.ico">
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
 	<body>
-
 		<!-- Wrapper -->
 			<div id="wrapper">
 
 				<!-- Header -->
 					<header id="header">
-						<div class="logo">
-							<!-- <span class="portrait"><img src="images/cheesin.JPG" alt="" /></span> -->
-							<span class="icon fa-coffee"></span>
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/me.png" alt="" /></span>
+									<span class="title">Ryan Hennings</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
 						</div>
-						<div class="content">
-							<div class="inner">
-								<h1>Ryan W. Hennings</h1>
-								<p><!--[-->San Jose State University - Computer Engineering</p>
-							</div>
-						</div>
-						<nav>
-							<ul>
-								<li><a href="#about">About</a></li>
-								<li><a href="#projects">Projects</a></li>
-								<!-- <li><a href="#about">About</a></li> -->
-								<li><a href="#contact">Contact</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
-							</ul>
-						</nav>
 					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="aboutme.html">About Me</a></li>
+							<li><a href="generic.html">Tempus etiam</a></li>
+							<li><a href="generic.html">Consequat dolor</a></li>
+							<li><a href="elements.html">Elements</a></li>
+						</ul>
+					</nav>
 
 				<!-- Main -->
 					<div id="main">
-
-						<!-- About -->
-							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/macbook.jpg" alt="" /></span>
-								<p>I currently live in the SF Bay Area and am finishing up my B.S. in Computer Engineering at San Jose State University. I enjoy working on my <a href="#bronco">electric longboard</a> and developing <a href="#spartamart">iPhone applications</a>.</p>
-							</article>
-								
-
-						<!-- Projects -->
-							<article id="projects">
-								<h2 class="major">Projects</h2> 
-								<h3>Electric Skateboard: <a href="#bronco">"The Bronco"</a></h3>
-								<span class="image main"><img src="images/eskateBoard.jpeg" alt="" /></span>
-								<p>I have always been fascinated with electric vehicles so I decided to build an electric skateboard to improve my commute to school. I started researching for the project in the summer of 2015 and the build begin in early 2016.  Although the board is fully operational, I am still adding improvements. The current enhancements include adding a BMS for easier charging/cell balancing and incorporating an iOS app to monitor the speed and various settings for the board. The link below outlines the project from its inception to the current improvements being implemented.</p>
-								<ul class="actions">
-									<li><a href="#bronco" class="button">More Info</a></li>
-								</ul>
-
-								<h3>Collaborative Filtering: <a href="#collab_filtering">Ratings Predictions</a></h3>
-								<span class="image main"><img src="images/collabfiltering.png" alt="" /><sup><i>By Moshanin - <a href="https://en.wikipedia.org/wiki/Collaborative_filtering#/media/File:Collaborative_filtering.gif">https://commons.wikimedia.org/w/index.php?curid=24097346</a></i></sup></span></p>
-								<p> For a class project I took a crack a classic machine learning algorithm, Collaborative Filtering. The project is designed similar to the “Netflix Prize” competition. Like many collaborative filtering algorithms used in commercial websites and programs, a baseline predictor, user and movie biases, cosine similarity, and nearest neighbor are used to predict user movie ratings. The report used a small sample set the easily demonstrate the core, underlying algorithm.</p>
-								<ul class="actions">
-									<li><a href="#collab_filtering" class="button">More Info</a></li>
-								</ul>
-
-								<h3>iOS Application: <a href="#spartamart">"SpartaMart"</a></h3>
-								<span class="image main"><img src="images/SpartaMart852.jpg" alt="" /></span></p>
-								<p> SpartaMart is an iPhone application that allows SJSU students to buy goods from one another in a safe and comfortable manner. The project began as an assignment to understand the software lifecycle of an application in the fall of 2016. I have continued to work on the application and hope to have it submitted to the app store by summer 2017. </p>
-								<ul class="actions">
-									<li><a href="#spartamart" class="button">More Info</a></li>
-								</ul>
-
-								<h3>FSAE Electric: <a href="#testboard">SRE Test Board</a></h3>
-								<span class="image main"><img src="images/testboard.jpeg" alt="" /></span></p>
-								<p>In 2015-2016 I had a small role on the Spartan Racing Electric team where I built a test board to verify the BMS and current sensor were functioning properly for inspection. The board is Arduino based and uses a 16x2 LCD to display the sensor data.</p>
-								<ul class="actions">
-									<li><a href="#testboard" class="button">More Info</a></li>
-								</ul>
-								
-								<p>More Stuff will be added here. For now check out my <a href="https://github.com/HenningsRyan">GitHub</a> to find ongoing projects.
-							</article>
-
-							<!-- Bronco -->
-								<article id="bronco">
-									<!-- <button onclick="goBack()">< Back</button> -->
-									<h2 class="major">The Bronco</h2>
-									<span class="image main"><img src="images/eboard.jpeg" alt="" /></span>
-								<!-- Table of Contents -->
-									<h2>Contents</h2>
-									<ol>
-										<li><a href="#introduction">Introduction</a></li>
-										<li>
-											Power System<br>
-											&nbsp;a.&nbsp;&nbsp;&nbsp;Initial Battery Designs<br>
-											&nbsp;b.&nbsp;&nbsp;&nbsp;Current Implementation<br>
-											&nbsp;c.&nbsp;&nbsp;&nbsp;Future Improvements<br>
-										</li>
-										<li>
-											Drive System<br>
-											&nbsp;a.&nbsp;&nbsp;&nbsp;Initial Drivetrain Setup<br>
-											&nbsp;b.&nbsp;&nbsp;&nbsp;Current Implementation<br>
-											&nbsp;c.&nbsp;&nbsp;&nbsp;Future Improvements<br>
-										</li>
-										<li>
-											Board & Accessories<br>
-											&nbsp;a.&nbsp;&nbsp;&nbsp;Basic Components<br>
-											&nbsp;b.&nbsp;&nbsp;&nbsp;Lights<br>
-											&nbsp;c.&nbsp;&nbsp;&nbsp;iOS/watchOS Application<br>
-										</li>
-										<li><a href="#parts_list">Parts List</a><br></li>
-										<li><a href="#additional_resources">Additional Resources</a><br>
-											&nbsp;a.&nbsp;&nbsp;&nbsp;Vendors<br>
-											&nbsp;b.&nbsp;&nbsp;&nbsp;Forums<br>
-											&nbsp;c.&nbsp;&nbsp;&nbsp;Calculators<br>
-											<!--
-											&nbsp;d.&nbsp;&nbsp;&nbsp;<a href="#references">References</a><br></li>
-											-->
-									</ol>
-								<!-- Introduction -->
-								<a name="introduction"></a>
-									<h2>Introduction</h2>
-									<p>
-										I have always had a passion for electric vehicles and with the rise of electric skateboards in particular over the past few years, I figured it would be a great project for an engineering student. For my first build, I planned to use parts that had proven to be effective in the DIY community. Eventually, I hope to use my knowledge from this build along with my schooling to design my own custom motor controller, BMS, remote transmitter, and an iOS application to track and log information.</p>
-									<p>
-										The board earned the name, <i>”The Bronco"</i> from an early prototype where eager friends testing it out would unexpectedly be <i>bucked</i> off when the connection from the transmitter to the motor controller would suddenly drop. This can unfortunately be quite a traumatizing experience when traveling at >20mph. These issues have since been fixed and the board is mostly safe for riding today, but it is still important to remember this is not a professional product and can still be incredibly dangerous when reaching high speeds. Overall, the project has proved to be a fun, yet challenging and even frustrating experience at times.</p>
-									<span class="image main"><img src="images/ebaordScuff.jpeg" alt="" /></span>
-									<p>
-										Some nice scuff makes from when the board went rogue and ran into tires and curbs.</p>
-									<p>
-										This website is new and incomplete. A complete write up is coming soon. Images from the first fully functional design are shown below.</p>
-									<span class="image main"><img src="images/firstTest.jpg" alt="" /></span>
-									<p>
-										Initial testing</p>
-									<span class="image main"><img src="images/electronics.jpeg" alt="" /></span>
-									<p>
-										Originally used two 5s 5aH LiPos to power the board. I have since switched to using five 2s 5aH (so the same 10 cell-37V total) for a smaller profile.</p>
-									<span class="image main"><img src="images/enclosure.jpeg" alt="" /></span>
-									<p>
-										The original enclosure (Flagship V2 by psycotiller). With the new lower profile batteries, a slimmer custom enclosure can be used.</p>
-									<span class="image main"><img src="images/voltmeters.jpeg" alt="" /></span>
-									<p>
-										I used a voltmeter to monitor each of the two 5 cell batteries originally, since they kept discharging at different rates.</p>
-									<span class="image main"><img src="images/drivetrain.jpeg" alt="" /></span>
-									<p>
-										The original drivetrain used a 9mm wide belt at a 16T/36T gearing ratio. I recently switched to a 15mm wide belt which has improved both the acceleration and brake tremendously. The trade off is that it seems to be loosing efficiency. Not a major issue though, since I don't plan on reaching the 30mph speed the board can technically reach at full efficiency.</p>
-									<span class="image main"><img src="images/boardTopView.jpeg" alt="" /></span>
-
-								<!-- Parts List -->
-								<a name="parts_list"></a>
-									<h2>Parts List</h2>
-								<h4>Power System:</h4></a></li></ol>
-									<ul><li>Battery: 10S1P 5aH (<a href="https://hobbyking.com/en_us/turnigy-5000mah-2s-7-4v-60c-hardcase-pack.html">Turnigy 5Ah 2S 60C Hardcase Packs x5</a>)</li>
-									<li>High Current Switch: <a href="https://github.com/vedderb/SparkSwitch"> Vedder Anti-Spark</a></li>
-									<li>Switch: <a href="https://www.amazon.com/gp/product/B017KP67FY/ref=oh_aui_detailpage_o03_s00?ie=UTF8&psc=1">Latching LED Pushbutton SPDT</a></li>
-									<li>Battery Management System: <a href="http://www.batterysupports.com/36v-37v-42v-10s-60a-10x-36v-lithium-ion-lipolymer-battery-bms-p-267.html">42V-10S-60A LiPo BMS</a></li>
-									<li>Charger: <a href="https://www.amazon.com/gp/product/B01HXMY0TE/ref=od_aui_detailpages00?ie=UTF8&psc=1">42V-2A Fast Charger</a>
-									<li>Charger Replacement Plug: <a href="https://cart.electricscooterparts.com/ProductDetails.asp?ProductCode=CNX-505	">3 Pin Inline</a></li>
-									<li>Charge Port: <a href="https://cart.electricscooterparts.com/ProductDetails.asp?ProductCode=CNX-515">3-Pin Inline Port</a></li>
-									<li>Voltmeter: <a href="https://www.amazon.com/5-120V-Voltmeter-3-Digital-Display-Voltage/dp/B016FHSY3Q">5-120V DC LED meter</a></li>
-									</ul>
-								<h4>Drive System:</h4><ul>
-									<li>Motor Controller: <a href="http://www.ollinboardcompany.com/product/vedder-s-speed-controller">VESC </a></li>
-									<li>Motor: <a href="https://hobbyking.com/en_us/turnigy-aerodrive-sk3-6374-192kv-brushless-outrunner-motor.html">Turnigy SK3-6374-192kv Brushless DC</a></li>
-									<li>Belt: <a href="https://www.vbeltguys.com/">15mm HTD5-55T (275mm)</a></li>
-									<li>Gearing: <a href="http://diyelectricskateboard.com/diy-electric-skateboard-kits-parts/16t-htd5-motor-pulley/">36T/16T 2.25 Ratio</a></li>
-									<li>Motor Mount: <a href="http://diyelectricskateboard.com/diy-electric-skateboard-kits-parts/v4-63mm-motor-mount/">TorqueBoards v2 </a></li>
-									<li>Transmitter: <a href="https://electric-skateboard.market/product/2-4ghz-mini-remote-receiver/">2.4gHz Mini Remote</a></li></ul>
-								<h4>Board & Accessories</h4><ul>
-									<li>Deck: <a href="http://longhairedboy.com/shop/decks/lhb-scarlet-electric-skateboard-deck/">40” LHB Scarlet Electric Skateboard Deck </a></li>
-									<li>Wheels: <a href="https://www.amazon.com/ABEC11-FLYWHEELS-83mm-75a-Set/dp/B000REYYCO/ref=cm_cr_arp_d_product_top?ie=UTF8">83mm ABEC 11 75a Flywheels</a></li>
-									<li>Enclosure: <a href="http://psychotiller.com/products/shop">Custom Psycotiller 18” ABS Plastic</a></li>
-									<li>Enclosure Mount: <a href="https://www.amazon.com/Insert-Interface-Screws-Hexagonal-Socket/dp/B0143ABKX8/ref=sr_1_1?ie=UTF8&qid=1491343784&sr=8-1&keywords=M6+E-Nut+Wood+Insert+Interface+Screws">M6 Wood Insert Screws</a></li>
-									<li>Trucks: <a href="https://www.amazon.com/Caliber-Trucks-Cal-Longboard-Black/dp/B00NY3Q5Q8/ref=sr_1_1?ie=UTF8&qid=1491340574&sr=8-1&keywords=Caliber+Cal+II+black">Caliber II 50-degree</a></li>
-									<li>Lights: <a href="https://www.amazon.com/dp/B00R49C9GI/ref=twister_B00R47363K?_encoding=UTF8&th=1">3V-LED array</a></li>
-									<li>Risers: <a href="https://www.muirskate.com/longboard/risers/1903/0-5-khiro-flat-hard-risers">0.5” Khiro Flat </a></li>
-									<li>Hardware: <a href="https://www.amazon.com/INDEPENDENT-Genuine-Parts-Phillips-Hardware/dp/B00IO8D7NC/ref=sr_1_1?ie=UTF8&qid=1491343228&sr=8-1&keywords=skateboard+hardware+1.5">1.5” bolts</a></li>
-									<li>Bearings: <a href="https://www.amazon.com/Bones-Reds-Precision-Skate-Bearings/dp/B01N1S0HUD/ref=sr_1_1?ie=UTF8&qid=1491343417&sr=8-1&keywords=bones%2Breds&th=1&psc=1">Bones Reds (with spacers)</a></li>
-									<li>Miscellaneous Parts: 10AWG wire/5mm bullet connectors/Heat shrink tubing</br></p></li></ul>
-
-								<!-- Additional Resources -->
-								<a name="additional_resources"></a>
-									<h2>Additional Resources</h2>
-								<a name="vendors"></a>
-									<h4>Vendors:</h4></a></li></ul>
-									<ul><li>DIY Electric Skateboard: <a href="http://diyelectricskateboard.com">http://diyelectricskateboard.com</a></li>
-									<li>Enertion: <a href="http://www.enertionboards.com/">http://www.enertionboards.com/</a></li>
-									<li>Hobbyking: <a href="https://hobbyking.com/en_us">https://hobbyking.com/en_us</a></li>
-									<li>Alien Drive: <a href="http://aliendrivesystems.com/">http://aliendrivesystems.com/</a></li>
-									<li>Ollin Board: <a href="http://www.ollinboardcompany.com/">http://www.ollinboardcompany.com/</a></li></ul>
-								<a name="forums"></a>
-									<h4>Forums:</h4><ul>
-									<li>es8 builders: <a href="https://www.electric-skateboard.builders/">https://www.electric-skateboard.builders/</a>
-									<li>Endless-Sphere: <a href="https://endless-sphere.com/forums/viewforum.php?f=35">https://endless-sphere.com/forums/viewforum.php?f=35</a>
-									<li>VESC Website: <a href="http://vedder.se/2015/01/vesc-open-source-esc/">http://vedder.se/2015/01/vesc-open-source-esc/</a></li></ul>
-								<a name="calculators"></a>
-									<h4>Calculators:</h4><ul>
-									<li>Speed Calculator: <a href="http://calc.esk8.it/">http://calc.esk8.it/</a></li>
-									<li>Gear Ratio/Center Distance: <a href="https://sdp-si.com/eStore/CenterDistanceDesigner">https://sdp-si.com/eStore/CenterDistanceDesigner</a></li>
-									<li>Belt Length: <a href="http://www.bbman.com/belt-length-calculator/">http://www.bbman.com/belt-length-calculator/</a>
-									</li></ul>
-
-									<a href="#projects" class="button icon fa-angle-left">Back</a>
-								<!--
-								<a name="references"></a>
-									<h4>References:</h4><ul>
-										
-									</ul>
-								-->
+						<div class="inner">
+							<header>
+								<h1>Hi, I'm Ryan</h1>
+								<p>I recently graduated from San José State University with a degree in Computer Engineering. As fun as it was learning all the low-level architecture and embedded systems, I've found my true passion to be in iOS development. I love following all things Swift from weekly newsletters to podcasts. I'm eager to start my journey with an exciting and challenging position in mobile development.</p>
+								<p>Check out some of my favorite projects I completed both at school and on the side along the way. The <a href="#">about me</a> goes into detail of some other fun ways I like to spend my time. Contact info can be found at the bottom of this page.</p>
+							</header>
+							<section class="tiles">
+								<article class="style1">
+									<span class="image">
+										<img src="images/pic01.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Magna</h2>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
 								</article>
-
-							<!-- Collaborative Filtering -->
-								<article id="collab_filtering">
-									<h2><u>Collaborative Filtering</u></h2>
-
-									<span class="image main"><img src="images/Collaborative_filtering.gif" alt="" /><sup><i>By Moshanin - <a href="https://en.wikipedia.org/wiki/Collaborative_filtering#/media/File:Collaborative_filtering.gif">https://commons.wikimedia.org/w/index.php?curid=24097346</a></i></sup></span>
-									
-								<!-- Table of Contents -->
-									<h2>Contents</h2>
-									<ol>
-										<li><a href="#introductionCF">Introduction</a><br>&nbsp;a.&nbsp;&nbsp;&nbsp;Background</li>
-										<li>
-											<a href="#approach">Approach</a><br>
-											&nbsp;a.&nbsp;&nbsp;&nbsp;<a href="#tools">Tools</a><br>
-											&nbsp;b.&nbsp;&nbsp;&nbsp;<a href="#dataset">Dataset</a><br>
-											&nbsp;c.&nbsp;&nbsp;&nbsp;<a href="#algorithm">Collaborative Filtering Algorithm</a><br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i.&nbsp;&nbsp;&nbsp;<a href="#baseline_predictor">Baseline Predictor</a><br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ii.&nbsp;&nbsp;&nbsp;<a href="#similarity">Similarity</a><br>
-										</li>
-										<li>
-											<a href="#results">Results Analysis</a><br>
-											&nbsp;a.&nbsp;&nbsp;&nbsp;<a href="#rmse">RMSE</a><br>
-										</li>
-										<li>
-											<a href="#recommendations">Recommendations</a><br>
-											&nbsp;a.&nbsp;&nbsp;&nbsp;<a href="#rec_dataset">Dataset</a><br>
-											&nbsp;b.&nbsp;&nbsp;&nbsp;<a href="#predictions">Predictions</a><br>
-											&nbsp;c.&nbsp;&nbsp;&nbsp;<a href="#conclusion">Conclusion</a><br>
-										</li>
-										</ol>
-								<!-- CF Introduction -->
-								<a name="introductionCF"></a>
-									<h2>Introduction</h2>
-									<p>
-										This project demonstrates how <a href="https://en.wikipedia.org/wiki/Collaborative_filtering">Collaborative Filtering</a> can predict user ratings of a movie based on other user ratings. The algorithm discussed in this project uses a baseline predictor, user and movie biases, cosine similarity, nearest neighbor predictor, and root mean squared error (RMSE) for evaluating the results. Many commercial implementations will use some variation of these core concepts. The project worked on a small sample set which was able to easily demonstrate the core underlying algorithm. 
-										</p>
-									<h3>Background</h3>
-									<p>
-										Recommendation engines commonly use collaborative filtering of data from many users to make predictions about a given user’s preferences. The philosophy behind collaborative filtering is that ideal recommendations to a user will come from another user that has similar preferences. These preferences can be calculated by a user rating certain items and creating an estimated representation of that user’s interests. The algorithm would then find similar users that can offer recommendations for an item that the target user has not yet rated.
-									</p>
-									<p>
-										The gif shown at the top of this page demonstrates how this can be achieved. In this general case the users rate things like books, pictures, games, and videos to create a data set for establishing their preferences. Using collaborative filtering, predictions could then be made for whether or not the target user likes the video. The basis for the predictions is from ratings that similar users rated the target item. 
-									</p>
-									<span class="image main"><img src="images/netflix.jpg" alt="" /></span>
-									<p>
-										The project follows a scaled down version of the <a href="https://en.wikipedia.org/wiki/Netflix_Prize">Netflix Prize</a>. It was an open competition to build a collaborative filtering algorithm that could improve their in-house recommendation system for predicting ratings by 10%. Teams were given a data set consisting of a user, their rating for a movie, and the date they rated the movie. However, they were not given anything else pertaining to the user or the films. The algorithms would be tested on a separate set of ratings that were not given to the teams. A grand prize of $1 million was given in 2009 when "BellKor's Pragmatic Chaos" team was able to beat the current prediction algorithm by 10.06%. Their model consisted of a baseline prediction for each user that would take the average of a movie and add a weight to it based on user rating tendencies such as, time of the rating and frequency of ratings. They also used matrix factorization which is used in many collaborative filtering engines. The increased accuracy ended up being too small for justifying the engineering that would be required to implement the winning algorithm in their production environment. Netflix discontinued the competition as lawsuits arose due to insufficient interference control in their datasets allowing users to be identified.
-									</p>
-								<!-- Approach -->
-									<a name="approach"></a>
-									<h2>Approach</h2>
-									<p>
-										This project took user ratings for various movies and removed some ratings to create a test set to compare against. The algorithm follows a model used by the <a href="https://www.coursera.org/learn/networks-illustrated#">“Networks Illustrated”</a> course on Coursera by Princeton University. 
-									</p>
-									<a name="tools"></a>
-									<h3>Tools</h3>
-									<p>
-										The prediction engine for this project is written in Python 2.7. It is a simple to read language and allows the functions used to be presented clearly and concisely. Screenshots shown are from the mac OS terminal but any operating system with a Python 2.7 interpreter should be able to recreate the results. The complete source code can be found in the <a href="https://github.com/HenningsRyan/CollaborativeFilteringMovieRatings">GitHub repository</a>. The equations are displayed on this webpage using <a href="https://www.mathjax.org/">MathJax</a>. To format the equations in LaTex so they can be interpreted by MathJax, I used <a href="https://www.codecogs.com/latex/eqneditor.php">this converter</a>.
-									</p>
-									<a name="dataset"></a>
-									<h3>Dataset</h3>
-									<p>
-										In order to create a prediction engine for user ratings of movies, we need data to work with. In this project we will keep it small with just 12 users rating 10 different movies. The reasoning for keeping the set small is to easily illustrate the calculations made at each step in this paper. There are massive datasets available online, such as <a href="https://grouplens.org/datasets/movielens/">MovieLens</a>, where some sets contain over 20 million ratings for 27,000 movies by 138,000 users. Problems with these massive sets are that they are incredibly sparse, usually over 99% empty. With the small sample size of this project, we can still accurately demonstrate the core algorithm associated with collaborative filtering in an easy to read manner.
-									</p>
-									<span class="image main"><img src="images/nextflixDataset.png" alt="" /><sup><i>“Netflix Prize” Networks Illustrated (Brinton,Chaing)</i></sup></span>
-									<p>
-										The Netflix Prize data set was removed and only ones left floating around online are extremely outdated with most popular titles not even available anymore. To emulate the same idea as the Netflix Prize, movies were selected from Netflix that were available as of March 2016. The titles chosen were mostly popular titles that received mixed ratings.
-									</p>
-									<span class="image main"><img src="images/movies.png" alt="" /></span>
-									<p>
-										As we can see, there is a decent spread in movie genres and years for the small sample size. There was no user in the set who had seen all ten movies and none that had seen less than half
-									</p>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Title</th>
-													<th>Genre</th>
-													<th>Year</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Django Unchained</td>
-													<td>Drama, Western</td>
-													<td>2012</td>
-												</tr>
-												<tr>
-													<td>The Interview</td>
-													<td>Comedy</td>
-													<td>2014</td>
-												</tr>
-												<tr>
-													<td>The Benchwarmer</td>
-													<td>Comedy, Sport</td>
-													<td>2006</td>
-												</tr>
-												<tr>
-													<td>Silver Linings Playbook</td>
-													<td>Drama, Romance</td>
-													<td>2012</td>
-												</tr>
-												<tr>
-													<td>Goon</td>
-													<td>Comedy, Sport</td>
-													<td>2011</td>
-												</tr>
-												<tr>
-													<td>Pulp Fiction</td>
-													<td>Crime, Drama</td>
-													<td>1994</td>
-												</tr>
-												<tr>
-													<td>Days of Thunder</td>
-													<td>Action, Drama</td>
-													<td>1990</td>
-												</tr>
-												<tr>
-													<td>Sharknado 3</td>
-													<td>Horror, Sci-Fi</td>
-													<td>2015</td>
-												</tr>
-												<tr>
-													<td>The Lazarus Effect</td>
-													<td>Horror, Sci-Fi, Thriller</td>
-													<td>2015</td>
-												</tr>
-												<tr>
-													<td>Grease</td>
-													<td>Musical, Romance</td>
-													<td>1978</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-									<p>
-										The user base was built by creating a simple <a href="https://docs.google.com/forms/u/0/">Google Forms</a> survey that listed ten movies with the choices to rate from one to five stars or have not seen. After there were more than 10 responses, I felt there was enough data to work with to make predictions.
-									</p>
-									<p>
-										The Google Forms automatically creates a spreadsheet that can be saved as a .csv file and accessed by the Python script. The file needed some modification before storing the values as the rows were strings with the number and then “stars” written after. Movies that the user had not seen were given a “-1” value. The code below shows how the values for each rating from the users was extracted from the .csv file.
-										<pre><code>f = open('/collabFiltering/formResponses.csv')
-csvfile = csv.reader(f)
-user = [users() for i in range(12)] #list of users
-user2 = [users() for i in range(12)] #list of users
-index = 0
-for row in csvfile:
-    user[index].number = index+1
-    uRatings = row
-    uRatings.pop(0) #pop timestamp off
-    for stars in uRatings: #pop "stars" off each
-        uStars = stars.replace("stars","")
-        uStars = uStars.replace("star","")
-        uStars = uStars.replace("Have not seen","-1")
-        uStars = uStars.replace(" ","")
-        user[index].addRating(int(uStars))
-        user2[index].addRating(uStars)
-    index = index+1</code></pre>
-									</p>
-									<a name="algorithm"></a>
-									<h3>Collaborative Filtering Algorithm</h3>
-									<p>
-										Now that all of the data necessary for this project had been obtained, the actual implementation of the collaborative filtering to predict ratings can be designed. This section will walk through each step with the different methods used to achieve the predictions.
-									</p>
-									<a name="baseline_predictor"></a>
-									<h4>Baseline Predictor</h4>
-									<p>
-										Most collaborative filtering algorithms, including the Netflix Prize winner, use a baseline prediction. This is to weight the prediction ratings either higher or lower based on that users ratings tendencies. For example, if they systematically rate movies higher than most other users, then that effect needs to be captured for the final prediction. The equation below shows how the baseline prediction is obtained:
-									</p>\[b_{u,i}=\mu+b_{u}+b_{i}\]
-									<p>
-										Where \(\mu\) is the overall rating average for that movie, \(b_{u}\) and \(b_{i}\) are the bias values for the user and movie respectively. In simple terms, it is the raw average + user bias + movie bias (the raw average being the mean of all ratings in the matrix). The raw average for the data used in this project is 3.7, calculated in the function <i>raw_average()</i> shown below.
-									</p>
-									<pre><code>def raw_average(userClass):
-	number_of_ratings = 0
-	sum = 0
-	for i in range(0,len(userClass),1):
-		for rating in userClass[i].movie_ratings:
-			if (rating>0): # only rated movies
-				sum += rating
-				number_of_ratings += 1
-	return round(float(sum)/float(number_of_ratings),1)</code></pre>
-									<p>
-										Now to the user and movie bias need to be calculated. The bias will be the average of the ratings (row vector for user, column vector for movies) minus the raw average, as expressed in the equation:
-										\[b_{u}=\frac{1}{\left | I_{u} \right |}\sum_{i\epsilon I_{u}}(r_{u,i}-\mu)\] 
-									</p>
-									<p>
-										The function to implement the user bias is shown below. The function takes in the user number as the parameter and calculates their specific bias. This is the average of the row vector not including the movies that have not been seen.
-									</p><pre><code>def user_bias(userNum):
-user_obj = user # copy info from getRatings.py
-number_of_ratings = 0
-sum = 0
-for rating in user_obj[userNum].movie_ratings:
-	if (rating>0):
-		sum += rating
-		number_of_ratings += 1
-# Subtract raw avg from avg movie score for user
-return round(float(sum)/float(number_of_ratings),1)-raw_average(user_obj)</code></pre>
-									<p>
-										Calculating the movie bias will be very similar, except now it is going to be the average of the column vector minus the raw average. The function <i>movie_bias()</i> below takes a specific movie as the parameter and computes the bias.
-									</p><pre><code>def movie_bias(movieNum):
-user_obj = user # copy info from getRatings.py
-number_of_ratings = 0
-sum = 0
-# run through each users rating for specific movie
-for i in rang(0,len(user_obj),1):
-	if (user_obj[i].movie_ratings[movieNum]>0):
-		sum += user_obj[i].movie_ratings[movieNum]
-		number_of_ratings += 1
-return round(float(sum)/float(number_of_ratings),1)-raw_average(user_obj)</code></pre>
-									<p>
-										With this info, we can now construct a baseline predictor. The bias values computed for users and movies are shown the terminal output below. An example baseline predictor for user 6, movie 3, would be:
-										\[b=3.7+(-0.3)+(-0.6)=2.8\]
-									</p>
-									<span class="image main"><img src="images/biasTable.png" alt="" /></span>
-									<p>
-										This formula can be applied to all values in the user ratings matrix. The baseline predictors for all values is shown in the matrix below.
-									</p>
-									<span class="image main"><img src="images/biasmatrix.png" alt="" /></span>
-									<p>
-									<p>
-										Although some baselines would come out to be less than 1 or greater than 5, the actual ratings cannot, therefore those values are just given the baselines 1 or 5. To create this bias matrix we can use the code:
-									<pre><code>bias_obj = [users() for i in range(len(users))]
-for j in range(0,len(users),1):
-    for i in range(0,len(movies),1):
-        rating = round(raw_average(user_obj) + user_bias(j) + movie_bias(i),1)
-        if (rating>5.0): #cant have a higher rating than 5
-            rating = 5.0
-        if (rating< 1.0): #or lower than 1
-            rating = 1.0
-        bias_obj[j].addRating(rating)</code></pre>
-									</p>
-									<a name="similarity"></a>
-									<h4>Similarity</h4>
-									<p>
-										With the baseline complete, the predictions can be taken a step further by looking at how similar users are to each other. This is really the essence of what <i>collaborative filtering</i> is; searching for patterns in user behavior to enhance the rating estimates. Both strongly positive and negative correlations are helpful. So if two users are somewhat similar or dissimilar, they become neighbors. The patterns for how users rated movies can also be calculated (so it’s not just trying to find patterns on the row vectors, but also on the column vectors). 
-									</p>
-									<h5>Cosine Similarity</h5>
-									<p>
-										<a href="https://en.wikipedia.org/wiki/Cosine_similarity">Cosine similarity</a> was used to compare the users in this data set. Another method, <a href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient">Pearson correlation</a>, is popular in collaborative filtering, but it really only becomes more effective on large, sparse sets (like the MovieLens database). This dataset is small and relatively dense so the cosine similarity will not only be more efficient, but probably more accurate too.
-									</p>
-									<p>
-										The cosine similarity method takes the normalized dot product of two vectors, which in this algorithm is users and their ratings. An angle of 0 degrees (users rated exactly the same) would produce a value of 1. Similarly, if they are complete opposites producing an angle of 180 degrees, the value will be -1. As mentioned before, this negative correlation is still helpful since we can predict that the users will continue to rate things contradictory.<br><br>
-										To implement this design, the equation below shows that the angle is derived by taking the dot product and dividing by the <a href="https://en.wikipedia.org/wiki/Norm_(mathematics)#Euclidean_norm">Euclidean norms</a>:
-										\[s(u,v)=\frac{r_{u}r_{v}}{\left \| r_{u} \right \|\left \| r_{v} \right \|}=\frac{\sum r_{u,i}r_{v,i}}{\sqrt{\sum r^2_{u,i}}\sqrt{\sum r^2_{v,i}}}\]
-									</p>
-									<p>
-										Vectors that produce values near 0, around a 90 degree angle, will be classified as unknown ratings since they don’t really have a strong correlation to each other. The similarity values are calculated on baseline errors, so the rating predictions are centered at zero to try and correct for errors. To accomplish this, the actual user ratings (from the survey) are subtracted form baseline predictors. This produces a <i>baseline error matrix</i> show below:
-									</p>
-									<span class="image main"><img src="images/baselineerror.png" alt="" /></span>
-									<p>
-										In the baseline error matrix, values of zero indicate zero error, whereas negative values indicate the prediction was too high and vice versa. The values actually entered for movies that have not been seen were 9999 to keep the items in the list same data types. The x’s used in the matrix above are shown for visibility. To create this matrix we can use the code:
-										<pre><code>baseline_error_obj = [users() for i in range(len(users))]
-for j in range(0,len(users),1):
-    for i in range(0,len(movies),1):
-        if (user_obj[j].movie_ratings[i] < 0):
-            err_rating = 9999
-        else:
-            err_rating = round(user_obj[j].movie_ratings[i] - bias_obj[j].movie_ratings[i],1)
-        baseline_error_obj[j].addRating(err_rating)</code></pre>
-										With this matrix, the Cosine similarity values can be derived in two different ways. First there is the <i>movie-movie</i> approach, or in this case, <i>user-user</i> which creates a 12x12 symmetric matrix showing the values of how each user is connected. <i>Movie-movie</i> would be similar, but 10x10 as there are 10 movies. Both systems were attempted for this project, however, the <i>movie-movie</i> approach ended up being a matrix full of small values close to zero which is not ideal. The <i>user-user</i> matrix shown below contains more values close to 1 and -1, indicating strong positive and negative correlations which is the desired result. 
-									</p>
-									<span class="image main"><img src="images/cosineSimilarityMatrix.png" alt="" /></span>
-									<p>
-										The equation posted above to achieve this values was implemented in the function <i>userCosineSimilarity()</i> which takes parameters of two lists (the thwo users being compared).
-									</p><pre><code>def userCosineSimilarity(user1,user2):
-    both_rated = [] # list indices of both rated
-    # same vector/user
-    if (user1 == user2):
-        return 0
-    for i in range(0,len(movie_list),1):
-        # check for not rated (=9999)
-        if (user1[i]< 5.0 and (user2[i]< 5.0))
-            both_rated.append(i)
-
-    numerator = 0
-    for index in both_rated:
-        numerator += user1[index]*user2[index]
-
-    denminator1 = 0
-    denminator2 = 0
-    for index in both_rated:
-        denminator1 += user1[index]*user1[index]
-        denminator2 += user2[index]*user2[index]
-    denminator = sqrt(denminator1)*sqrt(denminator2)
-
-    return round(numerator/float(denminator),3)</code></pre>
-    								<p>
-    									The function returns a number between -1 and 1 rounded to 3 decimal places. Since this function only generates the similarity between two users, the values for all users can be achieved in by simply looping the users through all comparisons as shown below. This is the data used to fill the cosine similarity matrix shown above.
-    								</p><pre><code>cosine_objs = baseline_error_obj
-for i in range(0,len(users),1):
-    for j in range(0,len(users),1):
-        similarity = userCosineSimilarity(baseline_error_obj[i].movie_ratings, baseline_error_obj[j].movie_ratings)
-        cosine_objs[i].addSimilarity(similarity)</code></pre>
-        							<p>
-        								For more information on cosine similarity along with other similarity measurement implantations in Python, I found <a href="http://dataaspirant.com/2015/04/11/five-most-popular-similarity-measures-implementation-in-python/">this article</a> helpful.
-        							</p>
-
-        							<h5>Neighborhood Predictor</h5>
-        							<p>
-        								Now that the similarities between users have been established, each user will choose the user that they are most similar (or dissimilar) to, for predicting their ratings. There are many options on how to implement a <a href="https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm#Algorithm">nearest neighbor</a> but for this project, a simple brute force method was used to find the person with the highest absolute value. Only one neighbor was used since in this dataset there were only 12 users. If a second neighbor was used in the case that the first could not, they would probably have a low cosine similarity score anyways. Many optimized collaborative filtering algorithms tend to not even use the neighbor if the absolute value of the score is not greater than 0.9.<br><br>
-        								To find a given users neighbor, you simply traverse down a column or row (since it is a symmetric matrix, the values are the same) of the cosine similarity matrix and find the score closest to the absolute value of 1. We take the absolute value since a strong negative correlation is still helpful. The brute force method to finding the nearest neighbor was implemented with the two functions below:
-        							</p><pre><code>def nearestNeighbor(userClass):
-    maxVal = 0
-    for value in userClass.similarity_angle:
-        if abs(value) > abs(maxVal):
-            maxVal = value
-    return maxVal
-
-def nearestNeighborIndex(userNum):
-    userIndex = cosine_objs[userNum].similarity_angle.index(nearestNeighbor(cosine_objs[userNum]))
-    return userIndex</code></pre>
-    								<p>
-    									The <i>nearestNeighbor()</i> function obtains the value of the nearest neighbor for a given user while the <i>nearestNeighborIdex()</i> provides the index at which that value is stored. The index is important because that is the user who the nearest neighbor. The <i>.index</i> function used is predefined in Python and returns the first index for the value being searched. If that value is not preset in the list, the script will halt with an error, but that should never be the case due to the first function always obtaining the cosine similarity value.<br><br>
-    									With the neighbors of all of the users found, a final prediction of all the movie ratings can be calculated. Each prediction will be made by taking the baseline prediction used, and adding the error value for produced from the neighbor. It can be easily seen in the equation:
-    									\[FinalPrediction=BaselinePrediction+NeighborErrorPridiction\]<br><br>
-    									With the help of the code used to create the <i>bias_obj</i> and <i>baseline_error_obj</i> above, we can create the final prediction as follows:
-    								<pre><code>final_predictions = [users() for i in range(len(users))]
-for userID in range(0,len(users),1):
-    for i in range(0,len(movies),1):
-        base_predic = bias_obj[userID].movie_ratings[i]
-        neighb = nearestNeighborIndex(userID) #find neighbor
-        if (cosine_objs[userID].similarity_angle[neighb] > 0):
-            errorRating = baseline_error_obj[neighb].movie_ratings[i]
-            if (errorRating < 10): #check for 9999
-                final_predictions[userID].addRating(round(base_predic + errorRating, 1))
-            else: #neighbor didnt rate movie
-                final_predictions[userID].addRating(round(base_predic + 0, 1))
-
-        elif (cosine_objs[userID].similarity_angle[neighb] < 0): #dissimilar
-            errorRating = baseline_error_obj[neighb].movie_ratings[i]
-            if (errorRating < 10):  # check for 9999
-                final_predictions[userID].addRating(round(base_predic + errorRating, 1))
-            else:  # neighbor didnt rate movie
-                final_predictions[userID].addRating(round(base_predic + 0, 1))</code></pre> 
-    								</p>
-    								<p>
-    									Since some of the error prediction values are negative, this simply means that the predictor was too high and we are going to subtract form the baseline. If the nearest neighbor had not rated the movie, then 0 will be added to the baseline because there is not useful information we can add to the prediction. This is where having multiple neighbors would be useful, as the next neighbor could be checked to see if they had rated the movie. The final predictions using this method can be seen in the terminal output below, with the movies going across from 1 to 10, and the users displayed going down from 1 to 12.
-    								</p>
-    								<span class="image main"><img src="images/finalPredictions.png" alt="" /></span>
-
-    								<a name="results"></a>
-    								<h2>Results Analysis</h2>
-    								<p>
-    									With the predictions finalized, we need a way to evaluate the results. This section will show the statistical analysis of the data along with the algorithm analysis of running and search times.
-    								</p>
-    								<a name="rmse"></a>
-    								<h3>Root Mean Squared Error</h3>
-    								<p>
-    									A common way of measuring the accuracy of recommendation  engines in calculating the <a href="https://en.wikipedia.org/wiki/Root-mean-square_deviation">root mean squared error (RMSE)</a>. In simple terms, it indicates how much error is between two datasets. This is the method that was used for the Netflix Prize and will be used to evaluate this project as well. For context, the Netflix Prize winners improved the RMSE of the Netflix in-house algorithm by 10.06%. One of the reasons Netflix used this as the evaluation method is that it places a greater emphasis on large errors. For example, a prediction rating that is 2 stars off, it is penalized 8 times harsher than a prediction rating that is 0.2 stars off. The RMSE takes the sum of the average ratings minus the predicted ratings squared. Then divides this number by the total number of predictions in the dataset and takes the square root of that value. This can be seen more clearly in the equation:
-    									\[RMSE=\sqrt{\frac{1}{N}\sum_{N}^{i=1}(x_i-\hat{x_i})^2}\]
-    								</p>
-    								<p>
-    									This calculation is only performed on the movies that were rated in the dataset since there is no data to compare the predictions to unrated movies. This dataset will be called the training set. Usually there will be a test set, which contains ratings that are not used in building the engine. This can be something as simple as removing a few of the ratings in the training set and then adding them in when calculating the RMSE. The function used to calculate the RMSE is shown in the function <i>calcRMSE()</i>
-    									<pre><code>def calcRMSE(userClass):
-    sum = 0
-    movies = 0
-    for i in range(0,12,1):
-        for rating in userClass[i].movie_ratings:
-            #ignore movies not rated (-1)
-           if (rating > 0):
-               diff = rating - raw_average(userClass)
-               sum += diff*diff
-               movies += 1
-    return sqrt((sum/movies))</code></pre>
-    								</p>
-    								<p>Using this function, the RMSE can be calculated for each of the datasets</p>
-    								<ul>
-    									<li>Raw average (3.7): 		RMSE = 1.1692</li>
-    									<li>Baseline Predictor: 	RMSE = 1.0970</li>
-    									<li>Neighborhood Predictor: RMSE = 0.9260</li>
-    								</ul>
-    								<p>
-    									The predictions became more accurate as the criteria for evaluating the prediction increased. To demonstrate the improvements in simple terms, a percentage progression can be shown using the equation:
-    									\[(1-\frac{TestingRMSE}{RawAvgRMSE})*100=Percent Improvement\]
-    								</p>
-    								<p>
-    									Using this shows that the baseline predictor leads to a 6.5% improvement and the neighborhood predictor yields 26.2% improvement. This is a good size improvement for the training data, however, usually a test dataset is used to measure the algorithms accuracy. Creating a test dataset is as simple as removing a few of the ratings taken from the survey and testing the RMSE of their values to the final neighborhood predictor values. This is an aspect of the project that was not thought about beforehand so there was going to be no test data available. Luckily some users from the survey were able to rate some movies after, that they previously had not seen. This turned out to be even more useful since all of their original ratings could be used. The new user ratings were: user 1 rating movie 9 a score of 1, user 7 rating a score of 3, and user 11 rating movies 1 and 9 a score of 4 and 1. The RMSE of these values was 0.5147 for a ridiculous 127% improvement from the raw average. This is an abnormally low RMSE that is almost certainly due to the small sample size. Usually the RMSE of test data like this will actually be a little bit higher than the training set used, since the values in the test set are not included in developing the user/movie biases in the baseline predictions or even the neighbors.<br><br>
-    									Typical RMSE values for test datasets tend to be in the 0.8 to 0.9 range for professional collaborative filtering algorithms. The Netflix Prize winners boasted an RMSE of just under 0.9 for the test set provided by Netflix.
-    								</p>
-    								<a name="recommendations"></a>
-    								<h2>Recommendations</h2>
-    								<p>
-    									This project demonstrated a simple collaborative filtering algorithm. The core algorithm discussed, is implemented in many online sites including, but not limited to: Netflix, Amazon, Reddit, Spotify, and Pinterest. It can basically be applied to any to any website in which some item or form of media needs to be recommended to a user. They all will vary in their approach since different goals are needed, but the underlying algorithm discussed in this paper shows how it can be implemented. This section will discuss how different methods could have offered better results in a more optimized fashion.
-    								</p>
-    								<a name="rec_dataset"></a>
-    								<h3>Dataset</h3>
-    								<p>
-    									As mentioned earlier, there are large databases like MovieLens that provide lots of data to test this algorithm on. Choosing to use a small survey as the data seems to be the right approach still, since the goal became to simply describe how collaborative filtering works, as opposed to creating a complete recommendation engine fit for commercial use. The problem with this method however, is that mostly friends and family were used. This could lead to the users rating movies similarly and skewing the results, which was displayed in the test data that had an RMSE value of just over 0.5. If this algorithm was able to achieve that low of an error for the actual Netflix user base, I would probably be the lead engineer of their recommendation team. Realistic errors that they achieve are close to double that of what was calculated in the dataset used for this report. A better scientific approach would have been to survey completely random users of different age groups to make predicting ratings much more difficult. <br><br>One of the mistakes with using the movie ratings from the users in the survey was a failure to create a test set. This is important because the accuracy of the algorithm needs to be quantified. For competitions like the Netflix Prize, Netflix did not distribute a certain chunk of ratings from the users so that they could test the RMSE. This would clearly show how well the collaborative filtering was implemented. Luckily, a few results were able to be added to the set after, which is how the final RMSE was calculated for this project. For anyone attempting to recreate this experiment though, it would be recommended to create a test set beforehand. <br><br> The movies chosen were also somewhat popular, resulting in users rating most of the movies and doing so similarly. This choice was made intentionally to easily illustrate the numbers being produced, whereas using a large dataset like MovieLens would have mostly empty ratings. There also becomes a problem that some movies can just be hard to predict. This is unofficially known as the <a href="http://www.nytimes.com/2008/11/23/magazine/23Netflix-t.html">"Napoleon Dynamite"</a> problem, as discussed in a New York Times article by Clive Thompson. Users tend to rate movies like this both incredibly inconsistently and unpredictably. Many users love the movie while many hate it and when asked why, they cannot explain it. Entries in the Netflix Prize commonly had over a 15% error for this movie, further proving how tough it is to crack. The movie related to this problem for the dataset in this project was “Sharknado 3”, although it appeared that most users ended up just hating it. Still, two of the four ratings used for the test set were actually for this movie, and the RMSE turned out to be incredibly low. With the small user base and likely similarity between them, this is probably due to random luck. 
-    								</p>
-    								<a name="predictions"></a>
-    								<h3>Predictions</h3>
-    								<p>
-    									The path to creating a prediction in this project was a simple one that could have been optimized at just about every step. The first step of creating a baseline prediction is one of the most altered aspects. Many implementations, including the Netflix Prize winners, change the baseline predictions based on when they rated a movie (time changing), and how often a user rated movies (frequency). This step creates a prediction that will already be more accurate before even using other users to adjust the final estimates. Most commercial collaborative filtering algorithms used will incorporate at least these two parameters in developing a baseline. <br><br>The next step of defining the similarity between users is where the options grow immensely and there is no specific “right” choice. This project used a Cosine Similarity which is more complicated than a simple Euclidean distance, yet still easy to comprehend and demonstrate in this report. Other common methods used for finding the similarity in users are: the <a href="https://en.wiktionary.org/wiki/Manhattan_distance">Manhattan distance</a>, which is the sum of the absolute differences of their Cartesian coordinates; the <a href="https://en.wikipedia.org/wiki/Jaccard_index">Jaccard similarity</a>, which measures the similarity of two sets by taking the intersection of the sets divided by the union of the sets; and graph based similarity, in which many options including shortest path can be implemented to find similarity. Graph based similarity presents an interesting option as there are so many different ways to optimize it. This could have been an entire report on its own, but the math quickly becomes more complicated and the explanations would have grown even longer in an already extensive write up. <br><br>Using the similarity in the predictions could also be modified, as collaborative filtering commonly compares the likeness of items to one another. This project simply showed the similarity between users, but the similarity between the movies is another route that could have been explored and included to help narrow the predictions. <br><br>After the similarities are computed, they need to be grouped together. The nearest neighbor method that was implemented also presents many options to optimize the algorithm. A simple brute force method was used that worked fine on the small data set. But this results in running time of \(O(D*N^2)\) where D is the number of users trying to find a neighbor. This is a computation that would much longer on the MovieLens dataset.  Different forms of tree algorithms would be recommended for larger sets as the search time could be decreased to a \(O(D*Nlog(N))\) time. Much like with the graph similarities, the nearest neighbor discussion and implementation could easily become a project of its own as there are so many options. 
-    								</p>
-    								<a name="conclusion"></a>
-    								<h3>Conclusion</h3>
-    								<p>
-    									This project went into detail for the underlying algorithm of user based collaborative filtering. It has become an important aspect of machine leaning with the growth of internet information. The ability to recommend products and media to consumers is not only a necessity for earning company’s revenue, but also to just make a program function properly. The ability to successfully acquire useful information from a user’s habits and behaviors is difficult and often overwhelming task. Collaborative filtering offers a solution to this problem by creating recommendations based off other users who exhibit similar behavior. 
-    								</p>
-
-
-									<a href="#projects" class="button icon fa-angle-left">Back</a>
+								<article class="style2">
+									<span class="image">
+										<img src="images/pic02.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Lorem</h2>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
 								</article>
-
-							<!-- SpartaMart -->
-								<article id="spartamart">
-									<h2 class="major">SpartaMart</h2>
-									<span class="image main"><img src="images/spartaMartSS.jpeg" alt="" /></span>
-									<p>Adding project details here...
-									</p>
+								<article class="style3">
+									<span class="image">
+										<img src="images/pic03.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Feugiat</h2>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
 								</article>
-
-							<!-- SRE Test Board -->
-								<article id="testboard">
-									<h2 class="major">SRE Test Board</h2>
-									<span class="image main"><img src="images/testboardCase.jpeg" alt="" /></span>
-									<p>Outline project here...
-									</p>
+								<article class="style4">
+									<span class="image">
+										<img src="images/pic04.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Tempus</h2>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
 								</article>
-
-						<!-- About //changed to intro
-							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
-							</article>
-
-							-->
-
-						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-								<form action="https://formspree.io/r.hennings11@gmail.com" method="POST">
-									<div class="field half first">
-										<label for="name">Name</label>
-									    <input type="text" name="name">
-									</div>
-									<div class="field half">
-										<label for="email">Email</label>
-										<input type="email" name="_replyto">
-									</div>
-								    <div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="4"></textarea>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send"></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
-								<ul class="icons">
-									<li><a href="https://github.com/HenningsRyan" class="icon fa-github"><span class="label">Github</span></a></li>
-									<li><a href="https://www.linkedin.com/in/ryan-hennings/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								</ul>
-							</article>
-
-						<!-- Elements -->
-							<article id="elements">
-								<h2 class="major">Elements</h2>
-
-								<section>
-									<h3 class="major">Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
-									<hr />
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
-										while (!deck.isInOrder()) {
-										    print 'Iteration ' + i;
-										    deck.shuffle();
-										    i++;
-										}
-
-										print 'It took ' + i + ' iterations to sort the deck.';
-									</code></pre>
-								</section>
-
-								<section>
-									<h3 class="major">Lists</h3>
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="https://github.com/HenningsRyan" class="icon fa-github"><span class="label">Github</span></a></li>
-									</ul>
-
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button special">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions vertical">
-										<li><a href="#" class="button special">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
-
-								<section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button special">Special</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button special icon fa-download">Icon</a></li>
-										<li><a href="#" class="button icon fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button special disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
-										<div class="field half first">
-											<label for="demo-name">Name</label>
-											<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+								<article class="style5">
+									<span class="image">
+										<img src="images/pic05.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Aliquam</h2>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
 										</div>
-										<div class="field half">
-											<label for="demo-email">Email</label>
-											<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+									</a>
+								</article>
+								<article class="style6">
+									<span class="image">
+										<img src="images/pic06.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Veroeros</h2>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
 										</div>
-										<div class="field">
-											<label for="demo-category">Category</label>
-											<div class="select-wrapper">
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
+									</a>
+								</article>
+								<article class="style1">
+									<span class="image">
+										<img src="images/pic07.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Ipsum</h2>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
 										</div>
-										<div class="field half first">
-											<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-											<label for="demo-priority-low">Low</label>
+									</a>
+								</article>
+								<article class="style2">
+									<span class="image">
+										<img src="images/pic08.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Dolor</h2>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
 										</div>
-										<div class="field half">
-											<input type="radio" id="demo-priority-high" name="demo-priority">
-											<label for="demo-priority-high">High</label>
+									</a>
+								</article>
+								<article class="style3">
+									<span class="image">
+										<img src="images/pic09.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Nullam</h2>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
 										</div>
-										<div class="field half first">
-											<input type="checkbox" id="demo-copy" name="demo-copy">
-											<label for="demo-copy">Email me a copy</label>
-										</div>
-										<div class="field half">
-											<input type="checkbox" id="demo-human" name="demo-human" checked>
-											<label for="demo-human">Am a robot</label>
-										</div>
-										<div class="field">
-											<label for="demo-message">Message</label>
-											<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="special" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
-
-							</article>
-
+									</a>
+								</article>
+							</section>
+						</div>
 					</div>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<ul class="icons">
-										<li><a href="https://github.com/HenningsRyan" class="icon fa-github"><span class="label">Github</span></a></li>
-										<li><a href="https://www.linkedin.com/in/ryan-hennings/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+
+								<form action="https://formspree.io/r.hennings11@gmail.com" method="POST">
+									<div class="field half first">
+										<label for="name"></label>
+									    <input type="text" name="name" id="name" placeholder="Name" />
+									</div>
+									<div class="field half">
+										<label for="email"></label>
+										<input type="email" name="email" id="email" placeholder="Email" />
+									</div>
+								    <div class="field">
+										<label for="message"></label>
+										<textarea name="message" id="message" placeholder="Message"></textarea>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="special" /></li>
 									</ul>
-						<!--
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-						-->
+								</form>
+
+<!-- 								<form method="post" action="#">
+									<div class="field half first">
+										<input type="text" name="name" id="name" placeholder="Name" />
+									</div>
+									<div class="field half">
+										<input type="email" name="email" id="email" placeholder="Email" />
+									</div>
+									<div class="field">
+										<textarea name="message" id="message" placeholder="Message"></textarea>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="special" /></li>
+									</ul>
+								</form> -->
+							</section>
+							<section>
+								<h2>More Info</h2>
+								<ul class="icons">
+									<li><a href="#" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="#" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</div>
 					</footer>
 
 			</div>
-
-		<!-- BG -->
-			<div id="bg"></div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 			<script>
 				function goBack() {
@@ -939,3 +223,10 @@ for userID in range(0,len(users),1):
 
 	</body>
 </html>
+
+<!-- Credit -->
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
